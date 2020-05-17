@@ -1,6 +1,6 @@
 import React from "react"
 
-import Divider from '../components/divider.js'
+import Divider from '../components/divider'
 
 import imgBellpepper from '../../static/images/vegetables/bellpepper.png'
 
@@ -24,6 +24,9 @@ export default () => {
       <Divider />
       <Divider pattern={2}/>
       <Divider pattern={3}/>
+      <Divider pattern={4}/>
+      <Divider pattern={4}/>
+      <Divider pattern={4}/>
       <Divider pattern={4}/>
     </>
   )

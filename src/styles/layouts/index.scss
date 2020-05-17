@@ -14,6 +14,10 @@ body {
   box-sizing: border-box;
 }
 
+svg {
+  fill: $black;
+}
+
 .container {
   margin: 4rem;
 }

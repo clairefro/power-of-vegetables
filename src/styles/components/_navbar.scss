@@ -1,13 +1,26 @@
 .navbar {
-  z-index: 2;
+  position: relative;
   position: fixed;
+  z-index: 2;
   top: -400px;
-  left: 0;
-  height: 500px;
-  width: 100vw;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
-  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  .navbar-background {
+    left: 0;
+    height: 500px;
+    width: 100vw;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #navbar-toggle {
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    background-color: transparent;
+    border: none;
+    svg {
+      fill: $yellow-light;
+    }
+  }
 }

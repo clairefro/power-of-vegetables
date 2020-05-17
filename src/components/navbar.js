@@ -13,12 +13,24 @@ const Navbar = () => {
   const [deg, setDeg] = useState(0)
 
   useEffect(()=> {
+    window.addEventListener('keyup', handleKeyup)
+    return () => window.removeEventListener('keyup', handleKeyup)
+  },[])
+
+  useEffect(()=> {
     setY(open ? 100 : 0)
     setDeg(open ? 180 : 0)
   },[open])
 
   const toggleMenu = () => {
     setOpen(!open)
+  }
+
+  const handleKeyup = (e) => {
+    const isEsc = e.keyCode === 27
+    if (isEsc) {
+      setOpen(false)
+    }
   }
 
   const navStyle = {

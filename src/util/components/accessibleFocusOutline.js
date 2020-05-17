@@ -9,8 +9,8 @@ const AccessibleFocusOutline = ({ children }) => {
   const [outlineEnabled, setOutlineEnabled] = useState(false)
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeydown)
-    return () => window.removeEventListener('keydown', handleKeydown)
+    window.addEventListener('keyup', handleKeyup)
+    return () => window.removeEventListener('keyup', handleKeyup)
   },[])
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const AccessibleFocusOutline = ({ children }) => {
     return () => window.removeEventListener('click', handleClick)
   },[])
 
-  const handleKeydown = (e) => {
+  const handleKeyup = (e) => {
     const isTabEvent = e.keyCode === 9 || e.keyCode === 13
     if (isTabEvent) {
       setOutlineEnabled(true)

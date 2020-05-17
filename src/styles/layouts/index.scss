@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap');
+// font-family: 'Gentium Book Basic', serif;
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Gentium Book Basic', serif;
+  color: $black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 4rem;
+}
+
+.large-vegetable {
+  object-fit: contain;
+  width: 500px;
+}

@@ -1,3 +1,9 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+// import Divider from '../components/divider.js'
+
+export default () => {
+  return (
+    <div>Hello world!</div>
+  )
+}

@@ -15,6 +15,16 @@ body {
   outline-color: $green;
 }
 
+h2 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+p {
+  font-size: 24px;
+}
+
 svg {
   fill: $black;
 }
@@ -24,7 +34,30 @@ svg {
 }
 
 .nav-spacer {
-  height: 100px;
+  height: 80px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.btn {
+  background-color: $green;
+  color: #FFF;
+  padding: 16px 20px;
+  text-decoration: none;
+  &.large {
+    padding: 16px 40px;
+    font-size: 48px;
+  }
+}
+
+.textbox {
+  margin-left: 80px;
+}
+
+.textbox-constrained {
+  max-width: 600px;
 }
 
 .large-vegetable {

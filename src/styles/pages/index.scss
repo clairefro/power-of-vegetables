@@ -3,11 +3,14 @@
 }
 
 .section-title {
-  display: flex;
   .textbox {
     margin-left: 100px;
   }
   p {
     font-size: 32px;
   }
+}
+
+.section-left-right {
+  display: flex;
 }

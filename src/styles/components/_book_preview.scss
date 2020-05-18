@@ -1,23 +1,29 @@
 .book-preview {
   margin: 0 auto;
   width: 100%;
+  max-width: 1267px;
   height: 630px;
+  max-height: 635px;
   position: relative;
+  height: calc((80vw * 635 )/1267); //protect aspect ratio
   .book-preview-pages {
     margin: 0 auto;
-    height: calc((90vw * 635 )/1267); //protect aspect ratio
-    width: 90vw;
+    height: calc((80vw * 635 )/1267); //protect aspect ratio
+    width: 80vw;
+    max-width: 1267px;
+    max-height: 635px;
     box-shadow: $bs;
     border-radius: 10px;
     img {
       margin: 0 auto;
       height: 100%;
       width: 100%;
+      border-radius: 5px;
     }
   }
   .book-preview-btns {
     position: absolute;
-    top: 300px;
+    top: calc(50%);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -29,9 +35,38 @@
     width: 80px;
     border-radius: 50%;
     transition: 0.3s;
+    &:active svg {
+      transition: 0s;
+      fill: #fff;
+    }
     &:disabled {
       opacity: 0.3;
       transition: 0.3s;
+      cursor: default;
+      &:active svg {
+        transition: 0s;
+        fill: $black;
+      }
+    }
+  }
+  .book-preview-read-more-link {
+    display: none;
+    color: #FFF;
+    font-size: 24px;
+    padding: 10px;
+    line-height: 60px;
+    white-space: nowrap;
+    text-shadow: $ts;
+    font-weight: bold;
+    position: absolute;
+    background-color: rgba(3,126,0,0.6);
+    text-decoration: none;
+    height: 80px;
+    border-radius: 40px;
+    right:0px;
+    top: 0px;
+    &:hover {
+      opacity: 0.9;
     }
   }
 }

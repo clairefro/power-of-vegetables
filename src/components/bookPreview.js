@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import FlippingPages from 'flipping-pages'
 import SVG from 'react-inlinesvg'
 
@@ -29,6 +29,8 @@ const BookPreview = () => {
   const next = () => {
     setSelected(selected + 1)
   }
+
+
 
   return (
     <div className="book-preview">
@@ -64,6 +66,7 @@ const BookPreview = () => {
             className="book-preview-btn next"
           ><SVG src={iconArrow} style={{transform: 'rotate(270deg)'}}/></button>
         </AccessibleFocusOutline>
+        <a href="#" className="book-preview-read-more-link" style={{display: selected === totalPages ? 'block' : 'none' }}>Read more!</a>
       </div>
     </div>
   )

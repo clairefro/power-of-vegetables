@@ -28,7 +28,7 @@ h3 {
   font-size: 32px;
 }
 
-p {
+p, a {
   font-size: 24px;
 }
 
@@ -49,15 +49,16 @@ button {
   height: 80px;
 }
 
-.ta-center {
-  text-align: center;
-}
 
 .btn {
+  font-size: 24px;
   background-color: $green;
   color: #FFF;
-  padding: 16px 20px;
+  padding: 16px 24px;
   text-decoration: none;
+  a {
+    margin-bottom: 0
+  }
   &.large {
     padding: 16px 40px;
     font-size: 48px;
@@ -75,4 +76,14 @@ button {
 .large-vegetable {
   object-fit: contain;
   width: 500px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

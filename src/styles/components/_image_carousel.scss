@@ -1,0 +1,21 @@
+.carousel-root {
+  max-width: 600px;
+  margin: 0 auto;
+  .carousel {
+    .slide {
+      background: transparent;
+      max-height: 600px;
+      img {
+        max-height: 500px;
+        object-fit: contain;
+      }
+    }
+    ul.thumbs {
+      li.thumb {
+        img {
+          margin:0 auto;
+        }
+      }
+    }
+  }
+}

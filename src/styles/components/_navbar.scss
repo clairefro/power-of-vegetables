@@ -15,10 +15,6 @@
   }
   #navbar-toggle {
     cursor: pointer;
-    // &:focus {
-    //   outline: none;
-    //
-    // }
     position: absolute;
     bottom: 40px;
     right: 80px;
@@ -28,4 +24,5 @@
       fill: $yellow-light;
     }
   }
+
 }

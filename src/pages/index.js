@@ -2,9 +2,27 @@ import React from "react"
 
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
+import ImageCarousel from '../components/imageCarousel'
 
+// vegetables
 import imgBellpepper from '../../static/images/vegetables/bellpepper.png'
+import imgCarrots from '../../static/images/vegetables/carrots.png'
+import imgSquash from '../../static/images/vegetables/squash.png'
+import imgSpinach from '../../static/images/vegetables/spinach.png'
+import imgEggplant from '../../static/images/vegetables/eggplant.png'
+import imgBeets from '../../static/images/vegetables/beets.png'
+
+// animals
 import imgBabydeer from '../../static/images/animals/babydeer.png'
+
+const veggieRainbow = [
+  imgBellpepper,
+  imgCarrots,
+  imgSquash,
+  imgSpinach,
+  imgEggplant,
+  imgBeets,
+]
 
 export default () => {
   return (
@@ -43,15 +61,25 @@ export default () => {
 
       <div className="container">
         <div className="section-look-inside">
-        <BookPreview />
+          <h2 className="ta-center">Look Inside</h2>
+          <BookPreview />
         </div>
       </div>
 
       <Divider pattern={3}/>
 
+      <div className="container">
+        <div className="section-features">
+          <h3 className="ta-center">Learn colors with beautiful illustrations</h3>
+          <ImageCarousel images={veggieRainbow}/>
+        </div>
+      </div>
 
 
       <Divider pattern={4}/>
+        <div className="container">
+
+        </div>
       <Divider pattern={4}/>
       <Divider pattern={4}/>
       <Divider pattern={4}/>

@@ -15,10 +15,17 @@ body {
   outline-color: $green;
 }
 
+h2, h3, h4 {
+  font-weight: normal;
+}
+
 h2 {
   font-size: 80px;
   text-transform: uppercase;
-  font-weight: normal;
+}
+
+h3 {
+  font-size: 32px;
 }
 
 p {
@@ -27,6 +34,11 @@ p {
 
 svg {
   fill: $black;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 .container {

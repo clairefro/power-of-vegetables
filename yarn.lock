@@ -4999,7 +4999,7 @@ flatted@^2.0.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
 
-flipping-pages@^1.1.0:
+flipping-pages@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/flipping-pages/-/flipping-pages-2.1.3.tgz#c6c3ccdf2a8f76aefcdec2f5b5fffc22b37c5654"
   integrity sha512-dUI+m5IJKIr6l/C7oHhxdEG2JauIAqJAmXd6pN0fZQ7SsPlxWnt3Q4DbTuitAACchrgODP27bmV4UddV5pdGsA==
@@ -10078,6 +10078,13 @@ react-responsive-carousel@^3.2.7:
     classnames "^2.2.5"
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.18"
+
+react-reveal@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-1.2.2.tgz#f47fbc44debc4c185ae2163a215a9e822c7adfef"
+  integrity sha512-JCv3fAoU6Z+Lcd8U48bwzm4pMZ79qsedSXYwpwt6lJNtj/v5nKJYZZbw3yhaQPPgYePo3Y0NOCoYOq/jcsisuw==
+  dependencies:
+    prop-types "^15.5.10"
 
 react@^16.12.0, react@^16.8.0:
   version "16.13.1"

@@ -5,7 +5,6 @@ import SVG from 'react-inlinesvg'
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 
 import imgNav from '../../static/images/accents/nav.png'
-import imgNavtab from '../../static/images/accents/navtab.png'
 import iconArrow from '../../static/icons/arrow.svg'
 
 const Navbar = () => {

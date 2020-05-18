@@ -8,6 +8,7 @@ html, body {
 body {
   font-family: 'Gentium Book Basic', serif;
   color: $black;
+  background-color: $yellow-light;
 }
 
 * {
@@ -80,6 +81,10 @@ button {
 
 .ta-center {
   text-align: center;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .d-horizontal {

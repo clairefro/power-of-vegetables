@@ -23,7 +23,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-inlinesvg": "^1.2.0",
-    "react-responsive-carousel": "^3.2.7"
+    "react-responsive-carousel": "^3.2.7",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"

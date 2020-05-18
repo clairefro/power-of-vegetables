@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel'
 const ImageCarousel = ({ images }) => (
   <Carousel
     autoPlay
-    infinteLoop
+    infiniteLoop
     emulateTouch
     showStatus={false}
   >

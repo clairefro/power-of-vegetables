@@ -82,8 +82,12 @@ button {
   text-align: center;
 }
 
-.d-flex {
+.d-horizontal {
+  margin: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  h3 {
+    margin: 80px;
+  }
 }

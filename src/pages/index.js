@@ -15,6 +15,7 @@ import imgBeets from '../../static/images/vegetables/beets.png'
 // animals
 import imgBabydeer from '../../static/images/animals/babydeer.png'
 import imgBabydeerHead from '../../static/images/animals/babydeerhead.png'
+import imgRabbitToot from '../../static/images/animals/toot.png'
 
 const veggieRainbow = [
   imgBellpepper,
@@ -71,11 +72,16 @@ export default () => {
 
       <div className="container">
         <div className="section-features">
-          <h3 className="ta-center">Learn colors with vegetables</h3>
           <ImageCarousel images={veggieRainbow}/>
-          <div className="d-flex">
+          <h3 className="ta-center">Learn colors with vegetables</h3>
+
+          <div className="d-horizontal">
             <h3>Learn body parts</h3>
             <img src={imgBabydeerHead} className="large-vegetable" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
+          </div>
+          <div className="d-horizontal">
+            <img src={imgRabbitToot} className="large-vegetable" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
+            <h3>Laugh together</h3>
           </div>
         </div>
       </div>

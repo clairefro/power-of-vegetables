@@ -23,6 +23,7 @@
     "gatsby-plugin-sharp": "^2.6.6",
     "gatsby-source-filesystem": "^2.3.5",
     "gatsby-transformer-sharp": "^2.5.2",
+    "intersection-observer": "^0.10.0",
     "node-sass": "^4.14.1",
     "pages": "^0.0.16",
     "react": "^16.12.0",

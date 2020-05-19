@@ -1,12 +1,11 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
 import { graphql } from 'gatsby'
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
 import ImageCarousel from '../components/imageCarousel'
-
 
 // vegetables
 import imgBellpepper from '../../static/images/vegetables/bellpepper.png'
@@ -38,7 +37,13 @@ export default ({ data }) => {
       <div className="container">
         <Fade>
           <div className="section-title">
-            <Img fluid={lazyBellpepper} alt="bell pepper" className="large-vegetable" id="title-image" />
+            <Img
+              fluid={lazyBellpepper}
+              alt="bell pepper"
+              objectFit="contain"
+              className="large-vegetable"
+              id="title-image"
+            />
             <div className="textbox">
               <h1 className="title-main">The Power of Vegetables</h1>
               <p>by Claire Froelich</p>
@@ -126,7 +131,7 @@ export const query = graphql`
     file(relativePath: { eq: "vegetables/bellpepper.png" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1579) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }

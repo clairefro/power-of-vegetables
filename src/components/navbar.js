@@ -3,10 +3,10 @@ import SVG from 'react-inlinesvg'
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
-
+// local
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 
-import imgNav from '../../static/images/accents/nav.png'
+// icons
 import iconArrow from '../../static/icons/arrow.svg'
 
 const Navbar = () => {
@@ -69,7 +69,7 @@ const Navbar = () => {
         fluid={bgImgData}
 
       />
-      
+
       <AccessibleFocusOutline>
         <button id="navbar-toggle" style={arrowStyle} onClick={toggleMenu}>
           <SVG src={iconArrow} />

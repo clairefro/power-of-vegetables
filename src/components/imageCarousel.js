@@ -11,7 +11,7 @@ const ImageCarousel = ({ images }) => (
   >
     {images.map((img, i) => (
       <div key={i}>
-          <img src={img} />
+          <img src={img} alt={`vegetable ${i + 1}`} />
       </div>
     ))}
   </Carousel>

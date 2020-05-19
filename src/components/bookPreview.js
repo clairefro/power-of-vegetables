@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import NoSSR from 'react-no-ssr'
-// import FlippingPages from 'flipping-pages'
 import SVG from 'react-inlinesvg'
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
+
 import page1 from '../../static/images/book-pages/en/page-1.png'
 import page2 from '../../static/images/book-pages/en/page-2.png'
 import page3 from '../../static/images/book-pages/en/page-3.png'
@@ -15,7 +14,14 @@ import iconArrow from '../../static/icons/arrow.svg'
 
 import 'flipping-pages/FlippingPages.css'
 
-
+const pages = [
+  page1,
+  page2,
+  page3,
+  page4,
+  page5,
+  page6,
+]
 
 const BookPreview = () => {
   const [canUseDOM, setCanUseDOM] = useState(false)
@@ -23,7 +29,7 @@ const BookPreview = () => {
   // Can't import FlippingPages due to SSR window reference error. Import after mount instead
   const [FlippingPages, setFlippingPages] = useState(null)
   const [selected, setSelected] = useState(0)
-  const [totalPages, setTotalPages] = useState(5)
+  const [totalPages] = useState(pages.length - 1)
 
   const handleSelectedChange = (selected) => {
     setSelected(selected)
@@ -70,12 +76,9 @@ const BookPreview = () => {
           polyfill */
           touch-action="none"
         >
-          <img src={page1} alt=""/>
-          <img src={page2} alt=""/>
-          <img src={page3} alt=""/>
-          <img src={page4} alt=""/>
-          <img src={page5} alt=""/>
-          <img src={page6} alt=""/>
+          {pages.map((p,i)=> (
+            <img src={p} key={i} alt={`sample book page #${i+1}`}/>
+          ))}
         </FlippingPages.default>
       )}
       <div className="book-preview-btns">

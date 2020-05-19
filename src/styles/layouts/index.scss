@@ -43,6 +43,12 @@ button {
   border: none;
 }
 
+.page {
+  position: relative;
+  padding-bottom: 200px;
+  min-height: 100vh;
+}
+
 .container {
   margin: 4rem;
 }

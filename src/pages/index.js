@@ -1,5 +1,6 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
+import NoSSR from 'react-no-ssr'
 
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
@@ -67,10 +68,12 @@ export default () => {
       <Divider pattern={2}/>
 
       <div className="container">
-        <Fade delay={500}>
+        <Fade>
           <div className="section-look-inside">
             <h2 className="ta-center">Look Inside</h2>
-            <BookPreview />
+            <NoSSR>
+              <BookPreview />
+            </NoSSR>
           </div>
         </Fade>
       </div>

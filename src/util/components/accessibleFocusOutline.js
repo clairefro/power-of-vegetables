@@ -9,13 +9,17 @@ const AccessibleFocusOutline = ({ children }) => {
   const [outlineEnabled, setOutlineEnabled] = useState(false)
 
   useEffect(() => {
-    window.addEventListener('keyup', handleKeyup)
-    return () => window.removeEventListener('keyup', handleKeyup)
+    if (typeof window !== undefined) {
+      window.addEventListener('keyup', handleKeyup)
+      return () => window.removeEventListener('keyup', handleKeyup)
+    }
   },[])
 
   useEffect(() => {
-    window.addEventListener('click', handleClick)
-    return () => window.removeEventListener('click', handleClick)
+    if (typeof window !== undefined) {
+      window.addEventListener('click', handleClick)
+      return () => window.removeEventListener('click', handleClick)
+    }
   },[])
 
   const handleKeyup = (e) => {

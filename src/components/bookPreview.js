@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import FlippingPages from 'flipping-pages'
+if (typeof window !== 'undefined') {
+  FlippingPages = require('flipping-pages')
+}
 import SVG from 'react-inlinesvg'
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'

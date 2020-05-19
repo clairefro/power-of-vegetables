@@ -13,8 +13,10 @@ const Navbar = () => {
   const [deg, setDeg] = useState(0)
 
   useEffect(()=> {
-    window.addEventListener('keyup', handleKeyup)
-    return () => window.removeEventListener('keyup', handleKeyup)
+    if (typeof window !== undefined) {
+      window.addEventListener('keyup', handleKeyup)
+      return () => window.removeEventListener('keyup', handleKeyup)
+    }
   },[])
 
   useEffect(()=> {

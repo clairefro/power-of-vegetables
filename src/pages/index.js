@@ -50,7 +50,7 @@ export default () => {
       <Divider />
 
       <div className="container">
-        <Fade delay={500}>
+        <Fade>
           <div className="section-synopsis d-horizontal">
             <img src={imgBabydeer} alt="baby deer with open mouth" className="large-vegetable" id="title-image"/>
             <div className="textbox textbox-constrained">
@@ -79,8 +79,10 @@ export default () => {
 
       <div className="container">
         <div className="section-features">
-          <h3 className="ta-center">Learn colors with vegetables</h3>
-          <ImageCarousel images={veggieRainbow}/>
+          <Fade>
+            <h3 className="ta-center">Learn colors with vegetables</h3>
+            <ImageCarousel images={veggieRainbow}/>
+          </Fade>
 
           <Fade>
             <div className="d-horizontal">
@@ -100,14 +102,16 @@ export default () => {
 
       <Divider />
       <div className="container">
-        <div className="section-reviews">
-           <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden"/>
-          <h2>Reviews</h2>
-          <div className="review">
-            <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
-            <p className="review-author">- Kendra Baker, mother of toddler</p>
+        <Fade>
+          <div className="section-reviews">
+             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden"/>
+            <h2>Reviews</h2>
+            <div className="review">
+              <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
+              <p className="review-author">- Kendra Baker, mother of toddler</p>
+            </div>
           </div>
-        </div>
+        </Fade>
       </div>
     </>
   )

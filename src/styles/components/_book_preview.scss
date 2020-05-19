@@ -30,6 +30,9 @@
   }
   .book-preview-btn {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0,0,0,0.2);
     height: 80px;
     width: 80px;

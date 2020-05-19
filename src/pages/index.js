@@ -18,6 +18,7 @@ import imgBeets from '../../static/images/vegetables/beets.png'
 import imgBabydeer from '../../static/images/animals/babydeer.png'
 import imgBabydeerHead from '../../static/images/animals/babydeerhead.png'
 import imgRabbitToot from '../../static/images/animals/toot.png'
+import imgPapadeer from '../../static/images/animals/papa.png'
 
 const veggieRainbow = [
   imgBellpepper,
@@ -33,7 +34,7 @@ export default () => {
     <>
       <div className="container">
         <Fade>
-          <div className="section-title d-flex">
+          <div className="section-title">
             <img src={imgBellpepper} alt="bell pepper" className="large-vegetable" id="title-image"/>
             <div className="textbox">
               <h1 className="title-main">The Power of Vegetables</h1>
@@ -56,7 +57,7 @@ export default () => {
               <h2>Synopsis</h2>
               <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
               <h2 className="ta-center">~</h2>
-              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables, but more subtly it is a commentary on questioning authority with our own observations.
+              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages questioning authority with our own observations. The story most importantly reminds us to laugh in life, and is best read aloud and not alone.
               </p>
             </div>
           </div>
@@ -78,8 +79,8 @@ export default () => {
 
       <div className="container">
         <div className="section-features">
-          <ImageCarousel images={veggieRainbow}/>
           <h3 className="ta-center">Learn colors with vegetables</h3>
+          <ImageCarousel images={veggieRainbow}/>
 
           <Fade>
             <div className="d-horizontal">
@@ -97,13 +98,17 @@ export default () => {
       </div>
 
 
-      <Divider pattern={4}/>
-        <div className="container">
-
+      <Divider />
+      <div className="container">
+        <div className="section-reviews">
+           <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden"/>
+          <h2>Reviews</h2>
+          <div className="review">
+            <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
+            <p className="review-author">- Kendra Baker, mother of toddler</p>
+          </div>
         </div>
-      <Divider pattern={4}/>
-      <Divider pattern={4}/>
-      <Divider pattern={4}/>
+      </div>
     </>
   )
 }

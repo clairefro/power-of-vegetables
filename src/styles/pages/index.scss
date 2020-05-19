@@ -3,11 +3,16 @@
 }
 
 .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .textbox {
-    margin-left: 100px;
   }
   p {
     font-size: 32px;
+  }
+  svg {
+    justify-self: flex-end;
   }
 }
 
@@ -15,5 +20,48 @@
   h3 {
     font-size: 60px;
     margin-bottom: 100px;
+  }
+}
+
+.section-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 600px;
+  }
+}
+
+.review {
+  padding: 20px;
+  position: relative;
+  max-width: 700px;
+  margin-bottom: 80px;
+  &:before,&:after {
+    position: absolute;
+    color: rgba(0,0,0,0.5);
+    font-size: 60px;
+  }
+  &:before {
+    content: '"';
+    left: -30px;
+    top: -30px;
+  }
+  &:after {
+    content: '"';
+    right: 0;
+    top: -30px;
+  }
+  .review-text {
+    display: block;
+    color: rgba(0,0,0,0.5);
+    font-size: 32px;
+    line-height: 50px;
+    strong {
+      color: $green;
+    }
+  }
+  .review-author {
+    text-align: right;
   }
 }

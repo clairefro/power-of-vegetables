@@ -9,6 +9,7 @@ body {
   font-family: 'Gentium Book Basic', serif;
   color: $black;
   background-color: $yellow-light;
+  overflow-x: hidden;
 }
 
 * {
@@ -85,6 +86,10 @@ button {
 
 .d-flex {
   display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
 }
 
 .d-horizontal {

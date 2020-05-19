@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-if (typeof window !== 'undefined') {
-  FlippingPages = require('flipping-pages')
-}
+import NoSSR from 'react-no-ssr'
+// import FlippingPages from 'flipping-pages'
 import SVG from 'react-inlinesvg'
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
@@ -16,7 +15,13 @@ import iconArrow from '../../static/icons/arrow.svg'
 
 import 'flipping-pages/FlippingPages.css'
 
+
+
 const BookPreview = () => {
+  const [canUseDOM, setCanUseDOM] = useState(false)
+  const [canUseFlipping, setCanUseFlipping] = useState(false)
+  // Can't import FlippingPages due to SSR window reference error. Import after mount instead
+  const [FlippingPages, setFlippingPages] = useState(null)
   const [selected, setSelected] = useState(0)
   const [totalPages, setTotalPages] = useState(5)
 
@@ -32,27 +37,47 @@ const BookPreview = () => {
     setSelected(selected + 1)
   }
 
+  useEffect(()=> {
+    setCanUseDOM(true)
+  },[])
 
+  // import FlippingPages after mount
+  useEffect(() => {
+    if(canUseDOM) {
+      async function getFlippingPages() {
+        setFlippingPages(await import('flipping-pages'))
+      }
+      getFlippingPages()
+    }
+  },[canUseDOM])
+
+  useEffect(() => {
+    if(FlippingPages !== null) {
+      setCanUseFlipping(true)
+    }
+  }, [FlippingPages])
 
   return (
     <div className="book-preview">
-      <FlippingPages
-        className="book-preview-pages"
-        direction="horizontal"
-        animationDuration={600}
-        selected={selected}
-        onSelectedChange={handleSelectedChange}
-        /* touch-action attribute is required by pointer events
-        polyfill */
-        touch-action="none"
-      >
-        <img src={page1} alt=""/>
-        <img src={page2} alt=""/>
-        <img src={page3} alt=""/>
-        <img src={page4} alt=""/>
-        <img src={page5} alt=""/>
-        <img src={page6} alt=""/>
-      </FlippingPages>
+      {canUseFlipping && (
+        <FlippingPages.default
+          className="book-preview-pages"
+          direction="horizontal"
+          animationDuration={600}
+          selected={selected}
+          onSelectedChange={handleSelectedChange}
+          /* touch-action attribute is required by pointer events
+          polyfill */
+          touch-action="none"
+        >
+          <img src={page1} alt=""/>
+          <img src={page2} alt=""/>
+          <img src={page3} alt=""/>
+          <img src={page4} alt=""/>
+          <img src={page5} alt=""/>
+          <img src={page6} alt=""/>
+        </FlippingPages.default>
+      )}
       <div className="book-preview-btns">
         <AccessibleFocusOutline>
           <button

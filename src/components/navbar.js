@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
+import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
@@ -8,6 +10,20 @@ import imgNav from '../../static/images/accents/nav.png'
 import iconArrow from '../../static/icons/arrow.svg'
 
 const Navbar = () => {
+  const data = useStaticQuery(graphql`
+    query navBackground {
+      file(relativePath: { eq: "accents/nav.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 2000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  const bgImgData = data.file.childImageSharp.fluid
+
   const [open, setOpen] = useState(false)
   const [y, setY] = useState(0)
   const [deg, setDeg] = useState(0)
@@ -47,8 +63,13 @@ const Navbar = () => {
 
   return (
     <div className="navbar" style={navStyle}>
-      <div className="navbar-background" style={{ backgroundImage: `url('${imgNav}')` }}>
-      </div>
+      <BackgroundImage
+        Tag="section"
+        className="navbar-background"
+        fluid={bgImgData}
+
+      />
+      
       <AccessibleFocusOutline>
         <button id="navbar-toggle" style={arrowStyle} onClick={toggleMenu}>
           <SVG src={iconArrow} />

@@ -7,7 +7,16 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    {
+     resolve: `gatsby-source-filesystem`,
+     options: {
+       name: `images`,
+       path: `${__dirname}/static/images/`,
+     },
+   },
     `gatsby-plugin-sass`,
     `gatsby-plugin-layout`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }

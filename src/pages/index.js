@@ -1,6 +1,7 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
-import NoSSR from 'react-no-ssr'
+import { graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
@@ -30,13 +31,14 @@ const veggieRainbow = [
   imgBeets,
 ]
 
-export default () => {
+export default ({ data }) => {
+  const lazyBellpepper = data.file.childImageSharp.fluid
   return (
     <>
       <div className="container">
         <Fade>
           <div className="section-title">
-            <img src={imgBellpepper} alt="bell pepper" className="large-vegetable" id="title-image"/>
+            <Img fluid={lazyBellpepper} alt="bell pepper" className="large-vegetable" id="title-image" />
             <div className="textbox">
               <h1 className="title-main">The Power of Vegetables</h1>
               <p>by Claire Froelich</p>
@@ -71,9 +73,7 @@ export default () => {
         <Fade>
           <div className="section-look-inside">
             <h2 className="ta-center">Look Inside</h2>
-            <NoSSR>
-              <BookPreview />
-            </NoSSR>
+            <BookPreview />
           </div>
         </Fade>
       </div>
@@ -119,3 +119,16 @@ export default () => {
     </>
   )
 }
+
+// get bellpepper for lazy load
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "vegetables/bellpepper.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1579) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`

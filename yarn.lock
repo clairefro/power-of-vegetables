@@ -4143,7 +4143,7 @@ debug@*, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@~4.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.9:
+debug@2, debug@2.6.9, debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -8307,6 +8307,13 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
+
+jsonp@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsonp/-/jsonp-0.2.1.tgz#a65b4fa0f10bda719a05441ea7b94c55f3e15bae"
+  integrity sha1-pltPoPEL2nGaBUQep7lMVfPhW64=
+  dependencies:
+    debug "^2.1.3"
 
 jsprim@^1.2.2:
   version "1.4.1"
@@ -13767,6 +13774,14 @@ urql@^1.9.7:
   dependencies:
     "@urql/core" "^1.11.0"
     wonka "^4.0.9"
+
+use-mailchimp-form@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/use-mailchimp-form/-/use-mailchimp-form-1.1.1.tgz#1ebf8793034a1f5193c1d6c99e0a66fd5dfec21d"
+  integrity sha512-LqhXqwti2pqQSIwhpQVdLbYc/aju5mrIb9/FeKODF3WITKpx16IMn0HmHuEkZzI1hbf5ozJbUVRQw+s5RhaYuA==
+  dependencies:
+    jsonp "^0.2.1"
+    query-string "^6.12.1"
 
 use@^3.1.0:
   version "3.1.1"

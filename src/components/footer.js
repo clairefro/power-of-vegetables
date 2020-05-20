@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import SVG from 'react-inlinesvg'
 
+import MailchimpSubscribeForm from './mailchimpSubscribeForm'
+
 import imgBackground from '../../static/images/accents/footer.png'
 
 import iconGlobe from '../../static/icons/globe.svg'
@@ -35,6 +37,7 @@ const Footer = () =>　{
               </select>
             </div>
           </div>
+          <MailchimpSubscribeForm lang={'en'} />
         </div>
 
 
@@ -52,7 +55,7 @@ const Footer = () =>　{
         <div className="footer-copyright">
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
-        
+
       </div>
     </div>
   )

@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
 // local
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 
+// images
+import imgSmallPepper from '../../static/images/vegetables/bellpepper-sm.png'
+
 // icons
 import iconArrow from '../../static/icons/arrow.svg'
 
 const Navbar = () => {
+  // get navbar bg image for lazy loading
   const data = useStaticQuery(graphql`
     query navBackground {
       file(relativePath: { eq: "accents/nav.png" }) {
@@ -21,7 +25,6 @@ const Navbar = () => {
       }
     }
   `)
-
   const bgImgData = data.file.childImageSharp.fluid
 
   const [open, setOpen] = useState(false)
@@ -67,9 +70,15 @@ const Navbar = () => {
         Tag="section"
         className="navbar-background"
         fluid={bgImgData}
-
-      />
-
+      >
+        <div className={`nav-menu ${open ? "open" : null}`}>
+          <Link to="/" className="nav-menu-left"><img src={imgSmallPepper} alt="bell pepper" onClick={toggleMenu} /></Link>
+          <div className="nav-menu-right">
+            <Link to="/creators" onClick={toggleMenu}>Creators</Link>
+            <Link to="/books" className="cta" onClick={toggleMenu}>Buy now</Link>
+          </div>
+        </div>
+      </BackgroundImage>
       <AccessibleFocusOutline>
         <button id="navbar-toggle" style={arrowStyle} onClick={toggleMenu}>
           <SVG src={iconArrow} />
@@ -78,7 +87,5 @@ const Navbar = () => {
     </div>
   )
 }
-
-
 
 export default Navbar

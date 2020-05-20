@@ -152,9 +152,10 @@
   }
   .footer {
     .footer-content {
+      padding-top: 100px;
       .footer-columns {
         margin: 0 0 0 0;
-        justify-items: left;
+        justify-items: center;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
         padding: 1rem 2rem;

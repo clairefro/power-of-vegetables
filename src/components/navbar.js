@@ -39,7 +39,7 @@ const Navbar = () => {
   },[])
 
   useEffect(()=> {
-    setY(open ? 100 : 0)
+    setY(open ? 80 : 0)
     setDeg(open ? 180 : 0)
   },[open])
 

@@ -121,3 +121,59 @@ input {
     margin: 80px;
   }
 }
+
+.img-wrapper {
+  display: flex;
+  min-height: auto;
+  min-width: 30px;
+  background-position: center;
+  background-size: contain;
+}
+
+img.responsive {
+  width: 100%;
+  height: auto;
+
+}
+.mw-600 {
+  max-width: 600px;
+}
+
+@media only screen and (max-width: $Tablets) {
+  .textbox.textbox-constrained {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: $Phones) {
+  .container {
+    margin: 2rem;
+  }
+  .large-vegetable {
+    // display:none;
+  }
+  .textbox {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tilde {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+
+  .btn.large {
+    font-size: 36px;
+  }
+  .d-horizontal {
+    flex-direction: column;
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+  }
+}

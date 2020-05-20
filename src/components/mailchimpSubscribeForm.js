@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { useMailChimpForm } from "use-mailchimp-form"
 
 const useFormFields = initialState => {
@@ -23,17 +24,27 @@ const MailchimpSubscribeForm = ({ lang }) => {
     LANG: lang
   });
   return (
-    <div>
+    <>
+    <div className="mailchimp-subscribe-form">
+      <p>{t.title[lang]}</p>
       <form onSubmit={event => handleSubmit(event, params)}>
-        <input
-          id="EMAIL"
-          name="EMAIL"
-          autoFocus
-          type="email"
-          value={params.EMAIL}
-          onChange={handleFieldChange}
-          required
-        />
+        <div className="email-field">
+          <input
+            id="EMAIL"
+            name="EMAIL"
+            autoFocus
+            type="email"
+            value={params.EMAIL}
+            onChange={handleFieldChange}
+            placeholder="you@email.com"
+            required
+          />
+          <div className={`mailchimp-response ${status.loading || status.error || status.success ? 'open' : null}`} >
+          {status.loading && t.loading[lang]}
+          {status.error && t.error[lang]}
+          {status.success && t.success[lang]}
+          </div>
+        </div>
         <input
           id="mce-LANG"
           name="LANG"
@@ -41,25 +52,41 @@ const MailchimpSubscribeForm = ({ lang }) => {
           type="text"
           value={lang}
         />
-        <button>Subscribe</button>
+        <button className="btn-subscribe">Subscribe</button>
       </form>
-      {status.loading && messages.loading[lang]}
-      {status.error && messages.error[lang]}
-      {status.success && messages.success[lang]}
     </div>
+    </>
   )
 }
 
 export default MailchimpSubscribeForm
 
-const messages = {
+MailchimpSubscribeForm.defaultProps = {
+  lang: 'en',
+}
+
+MailchimpSubscribeForm.propTypes = {
+  lang: PropTypes.oneOf(['en','ja','fr']).isRequired,
+}
+
+const t = {
+  title: {
+    en: "Get updates & coupons",
+    fr: "Restez connecté avec nous",
+    ja: "<JAPANESE title>",
+  },
+  placeholder: {
+    en: "you@email.com",
+    fr: "vous@email.com",
+    ja: "you@email.com",
+  },
   loading: {
     en: "Sending...",
-    fr: "<FRENCH loading>",
-    ja: "<JAPANESE loading>",
+    fr: "Envoi en cours...",
+    ja: "送信中...",
   },
   error: {
-    en: "Error, or email already subscribed",
+    en: "Error, invalid email or already subscribed",
     fr: "<FRENCH error>",
     ja: "<JAPANESE error>",
   },

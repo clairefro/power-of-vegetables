@@ -29,8 +29,10 @@
       margin: 0 auto;
       padding: 20px;
       display: grid;
-      max-width: 1000px;
-      grid-template-columns: 1fr 1fr 40%;
+      max-width: 800px;
+      width: 60vw;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
       grid-gap: 40px;
       .footer-column {
         a {
@@ -47,7 +49,6 @@
       .footer-col-3 {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
       }
     }
     .mobile-footer {
@@ -93,7 +94,7 @@
   }
 }
 
-@media only screen and (max-width: $Phones) {
+@media only screen and (max-width: $Tablets) {
   .page {
     padding-bottom: 500px;
   }
@@ -122,6 +123,62 @@
         text-align: center;
         a {
           display:block;
+          transition: 0.3s;
+          font-size: 18px;
+          &:hover {
+            color: $black;
+            transition: 0.3s;
+          }
+        }
+      }
+      .footer-copyright {
+        background-color: $black;
+      }
+    }
+    .lang-component {
+      color: $yellow-dark;
+      .footer-icon {
+        fill: $yellow-light;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: $Phones) {
+  .page {
+    padding-bottom: 630px;
+  }
+  .footer {
+    .footer-content {
+      .footer-columns {
+        margin: 0 0 0 0;
+        justify-items: left;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        a:nth-child(n) {
+          line-height: 28px;
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        .footer-col-3 {
+          display: none;
+        }
+      }
+      .mobile-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $yellow-dark;
+        color: $yellow-light;
+        padding: 2rem;
+        line-height: 20px;
+        text-align: center;
+        a {
+          display: block;
           transition: 0.3s;
           &:hover {
             color: $black;

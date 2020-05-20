@@ -39,7 +39,7 @@ const MailchimpSubscribeForm = ({ lang }) => {
             placeholder="you@email.com"
             required
           />
-          <div className={`mailchimp-response ${status.loading || status.error || status.success ? 'open' : null}`} >
+          <div className={`mailchimp-response`} >
           {status.loading && t.loading[lang]}
           {status.error && t.error[lang]}
           {status.success && t.success[lang]}

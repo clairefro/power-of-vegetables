@@ -12,6 +12,50 @@
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
+
+    .nav-menu {
+      &.open {
+        opacity: 1;
+        cursor: pointer;
+        transition: ease-in 0.3s;
+      }
+      cursor: default;
+      transition: ease-in 0.3s;
+      opacity: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100vw - 200px);
+      bottom: 80px;
+      left: 0;
+      font-size: 36px;
+      .nav-menu-left {
+        margin-left: 100px;
+      }
+      .nav-menu-right {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        cursor: inherit;
+        font-size: inherit;
+        text-decoration: none;
+        color: $green;
+        font-weight: bold;
+      }
+      img {
+        height: 80px;
+      }
+      .cta {
+        color: #FFF;
+        background-color: $green;
+        font-weight: bold;
+        padding: 8px 20px;
+      }
+    }
   }
   #navbar-toggle {
     cursor: pointer;
@@ -24,5 +68,4 @@
       fill: $yellow-light;
     }
   }
-
 }

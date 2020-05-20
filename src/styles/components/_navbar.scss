@@ -69,3 +69,45 @@
     }
   }
 }
+
+@media only screen and (max-width: $Tablets) {
+  .navbar {
+    .navbar-background {
+      .nav-menu {
+        width: calc(100vw - 120px);
+        bottom: 80px;
+        left: 0;
+        .nav-menu-left {
+          margin-left: 80px;
+        }
+        .nav-menu-right {
+          font-size: 28px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Phones) {
+  .navbar {
+    .navbar-background {
+      .nav-menu {
+        width: 100vw;
+        bottom: 80px;
+        left: 0;
+        a {
+          font-size: 22px;
+          margin: 0 1rem;
+        }
+        .nav-menu-left {
+          margin-left: 2rem;
+        }
+        .nav-menu-right {
+          font-size: 28px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

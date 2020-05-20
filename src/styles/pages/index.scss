@@ -45,12 +45,14 @@
   &:before {
     content: '"';
     left: -30px;
-    top: -30px;
+    top: 0;
+    transform: rotate(-10deg);
   }
   &:after {
     content: '"';
     right: 0;
-    top: -30px;
+    top: 0;
+    transform: rotate(10deg);
   }
   .review-text {
     display: block;

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import iconBook from  '../../static/icons/book.svg'
 import iconEbook from  '../../static/icons/ebook.svg'
 
-const BookCard = ({ cover, lang, kindleLink, paperbackLink }) => (
+const BookCard = ({ cover, lang, kindleLink, paperbackLink, renderLang }) => (
   <div className="book-card">
     <div className="book-card-section-image">
       <h4>{lang}</h4>
@@ -23,7 +23,7 @@ const BookCard = ({ cover, lang, kindleLink, paperbackLink }) => (
         {paperbackLink && (
           <a href={paperbackLink} target="_blank" className="book-link link-book">
             <SVG src={iconBook}/>
-            <p>Paperback</p>
+            <p>{t.paperback[renderLang] || t.paperback.en}</p>
           </a>
         )}
       </div>
@@ -38,4 +38,11 @@ BookCard.propTypes = {
   lang: PropTypes.string.isRequired,
   kindleLink: PropTypes.string,
   paperbackLink: PropTypes.string,
+}
+
+const t = {
+  paperback: {
+    en: "Paperback",
+    ja: "ペーパーバック",
+  }
 }

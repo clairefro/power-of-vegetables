@@ -1,31 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
+import PropTypes from 'prop-types'
 
 import { Link } from './link'
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 
-import page1 from '../../static/images/book-pages/en/page-1.png'
-import page2 from '../../static/images/book-pages/en/page-2.png'
-import page3 from '../../static/images/book-pages/en/page-3.png'
-import page4 from '../../static/images/book-pages/en/page-4.png'
-import page5 from '../../static/images/book-pages/en/page-5.png'
-import page6 from '../../static/images/book-pages/en/page-6.png'
+// context
+import { usePageContext } from '../context/pageContext'
 
 import iconArrow from '../../static/icons/arrow.svg'
 
 import 'flipping-pages/FlippingPages.css'
 
-const pages = [
-  page1,
-  page2,
-  page3,
-  page4,
-  page5,
-  page6,
-]
 
-const BookPreview = () => {
+const BookPreview = ( { pages } ) => {
+  const { langKey } = usePageContext()
   const [canUseDOM, setCanUseDOM] = useState(false)
   const [canUseFlipping, setCanUseFlipping] = useState(false)
   // Can't import FlippingPages due to SSR window reference error. Import after mount instead
@@ -98,10 +88,21 @@ const BookPreview = () => {
             className="book-preview-btn next"
           ><SVG src={iconArrow} style={{transform: 'rotate(270deg)'}}/></button>
         </AccessibleFocusOutline>
-        <Link to="/books" className="book-preview-read-more-link" style={{display: selected === totalPages ? 'block' : 'none' }}>Read more!</Link>
+        <Link to="/books" className="book-preview-read-more-link" style={{display: selected === totalPages ? 'block' : 'none' }}>{t.readmore[langKey]}</Link>
       </div>
     </div>
   )
 }
 
 export default BookPreview
+
+BookPreview.propTypes = {
+  lang: PropTypes.oneOf(['en','ja'])
+}
+
+const t = {
+  readmore: {
+    en: "Read more!",
+    ja: "もっと読む！",
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
+import { usePageContext } from '../context/pageContext'
 
 // local
 import { Link } from './link'
@@ -14,6 +15,7 @@ import imgSmallPepper from '../../static/images/vegetables/bellpepper-sm.png'
 import iconArrow from '../../static/icons/arrow.svg'
 
 const Navbar = () => {
+  const { langKey } = usePageContext()
   // get navbar bg image for lazy loading
   const data = useStaticQuery(graphql`
     query navBackground {
@@ -73,10 +75,10 @@ const Navbar = () => {
         fluid={bgImgData}
       >
         <div className={`nav-menu ${open ? "open" : null}`}>
-          <Link to="/" className="nav-menu-left"><img src={imgSmallPepper} alt="bell pepper" onClick={toggleMenu} /></Link>
+          <Link to="/" className="nav-menu-left"><img src={imgSmallPepper} alt="bell pepper" id="home-btn" onClick={toggleMenu} /></Link>
           <div className="nav-menu-right">
-            <Link to="/creators" onClick={toggleMenu}>Creators</Link>
-            <Link to="/books" className="cta" onClick={toggleMenu}>Buy now</Link>
+            <Link to="/creators" onClick={toggleMenu}>{t.creators[langKey]}</Link>
+            <Link to="/books" className="cta" onClick={toggleMenu}>{t.buy[langKey]}</Link>
           </div>
         </div>
       </BackgroundImage>
@@ -90,3 +92,14 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+const t = {
+  creators: {
+    en: "Creators",
+    ja: "クリエーター"
+  },
+  buy: {
+    en: "Buy now",
+    ja: "購入"
+  }
+}

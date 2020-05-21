@@ -5,8 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    image: "/images/og/og-image.jpg", // Path to image in the 'static' folder,
+    supportedLangs: ['en','fr','ja'], // for SEO alternate links
+    website: "https://www.power-of-vegetables.com",
+  },
   plugins: [
+    `gatsby-plugin-react-helmet-async`,
     {
      resolve: `gatsby-source-filesystem`,
      options: {

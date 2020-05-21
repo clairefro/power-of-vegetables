@@ -2,8 +2,8 @@ import React from "react"
 import Fade from 'react-reveal/Fade'
 import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
-import SEO from 'react-seo-component'
 
+import SEO from '../components/seo'
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
 import ImageCarousel from '../components/imageCarousel'
@@ -22,6 +22,8 @@ import imgBabydeerHead from '../../static/images/animals/babydeerhead.png'
 import imgRabbitToot from '../../static/images/animals/toot.png'
 import imgPapadeer from '../../static/images/animals/papa.png'
 
+import imgOG from '../../static/images/og/og-image.jpg'
+
 const veggieRainbow = [
   imgBellpepper,
   imgCarrots,
@@ -35,14 +37,11 @@ export default ({ data }) => {
   const lazyBellpepper = data.file.childImageSharp.fluid
   return (
     <>
+
       <SEO
         title="About"
-        titleTemplate="The Power of Vegetables"
         description="A children's story"
-        image={imgBellpepper}
-        pathname="/"
-        siteLanguage="en"
-
+        image={imgOG}
       />
       <div className="container">
         <Fade>

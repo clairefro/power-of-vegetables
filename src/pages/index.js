@@ -1,6 +1,6 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
 
 import Divider from '../components/divider'
@@ -48,7 +48,7 @@ export default ({ data }) => {
               <h1 className="title-main">The Power of Vegetables</h1>
               <p>by Claire Froelich</p>
               <p>Illustrated by Varvara Fomina</p>
-              <a href="#" className="btn large">Read now</a>
+              <Link to="/books" className="btn large">Read now</Link>
             </div>
           </div>
         </Fade>

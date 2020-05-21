@@ -15,14 +15,14 @@ const BookCard = ({ cover, lang, kindleLink, paperbackLink }) => (
     <div className="book-card-section-links">
       <div className="link-group">
         {kindleLink && (
-          <a href={kindleLink} target="_blank" className="book-link">
-            <SVG src={iconEbook} />
+          <a href={kindleLink} target="_blank" className="book-link link-ebook">
+            <SVG src={iconEbook} className="icon-ebook"/>
             <p>Kindle</p>
           </a>
         )}
         {paperbackLink && (
-          <a href={paperbackLink} target="_blank" className="book-link">
-            <SVG src={iconBook} />
+          <a href={paperbackLink} target="_blank" className="book-link link-book">
+            <SVG src={iconBook}/>
             <p>Paperback</p>
           </a>
         )}

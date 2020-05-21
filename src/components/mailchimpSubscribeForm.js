@@ -32,7 +32,6 @@ const MailchimpSubscribeForm = ({ lang }) => {
           <input
             id="EMAIL"
             name="EMAIL"
-            autoFocus
             type="email"
             value={params.EMAIL}
             onChange={handleFieldChange}

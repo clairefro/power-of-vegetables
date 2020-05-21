@@ -61,15 +61,15 @@ export default ({ data }) => {
               id="title-image"
             />
             <div className="textbox">
-              <h1 className="title-main">The Power of Vegetables</h1>
-              <p>by Claire Froelich</p>
-              <p>Illustrated by Varvara Fomina</p>
+              <h1 className="title-main">やさいのちから</h1>
+              <p>さく クレア・フレリク</p>
+              <p>いらすと　バーバラ・フォミナ</p>
               <Link
                 to="/books"
                 className="btn large"
                 onClick={() => fart.play()}
               >
-                Read now
+                今すぐ読む
               </Link>
             </div>
           </div>

@@ -8,12 +8,26 @@ export const navigateToPageByLang = (currentLang, selectedLang, currentSlug) => 
   if (selectedLang === currentLang) return null
 
   if (currentSlug === undefined) return navigate('/')
-  // remvove lang prefix
-  const strippedSlug = currentSlug.replace(/\/(\w+)\//, '')
 
+  // handle homepage specially
+  const landingPattern = /^\/(\w{2})?\/?$/
+  if (currentSlug.match(landingPattern)) {
+    if (selectedLang === 'en') {
+      navigate(`/`)
+      return
+    } else {
+      navigate(`/${selectedLang}`)
+      return
+    }
+  }
+
+  // get slug without lang prefix
+  const strippedSlug = currentSlug.match(/^\/(\w{2}\/)?(\w+\/)*(\w+)\/?$/)[3]
   if (selectedLang === 'en') {
     navigate(`/${strippedSlug}`)
+    return
   } else {
     navigate(`/${selectedLang}/${strippedSlug}`)
+    return
   }
 }

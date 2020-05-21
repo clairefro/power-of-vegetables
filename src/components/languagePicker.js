@@ -25,6 +25,7 @@ const LanguagePicker = () => {
 
   const handleLangChange = (e) => {
     fart.play()
+    console.log(slug)
     navigateToPageByLang(currentLang, e.target.value, slug)
   }
 
@@ -32,9 +33,9 @@ const LanguagePicker = () => {
     <div className="lang-component">
       <SVG src={iconGlobe} className="footer-icon"/>
       <select name="lang-select" id="lang-select" onChange={handleLangChange}>
-        <option value="en" selected={currentLang==='en'}>English</option>
-        <option value="fr" selected={currentLang==='fr'}>Français</option>
-        <option value="ja" selected={currentLang==='ja'}>日本語</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ja">日本語</option>
       </select>
     </div>
   )

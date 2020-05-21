@@ -15,24 +15,26 @@ export default () => (
     />
     <div className="container">
       <div className="title-box">
-        <h2 className="ta-center">Buy the book</h2>
-        <p className="ta-center">Available in Kindle and paperback formats. Expose your child the same fun story in several languages!</p>
+        <h2 className="ta-center">絵本を買う</h2>
+        <p className="ta-center">Kindleおよびペーパーバック形式で販売中。 子供に同じ楽しい話をいくつかの言語で読んでみましょう！</p>
       </div>
 
       <BookCard
-        cover={imgEN}
-        lang="English"
-        kindleLink="#"
-        paperbackLink="#"
-        renderLang='ja'
-      />
-      <BookCard
         cover={imgJA}
-        lang="Japanese"
+        lang="日本語"
         kindleLink="#"
         paperbackLink="#"
         renderLang='ja'
       />
+
+      <BookCard
+        cover={imgEN}
+        lang="英語"
+        kindleLink="#"
+        paperbackLink="#"
+        renderLang='ja'
+      />
+
 
     </div>
   </div>

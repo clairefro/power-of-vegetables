@@ -27,6 +27,15 @@ import imgBabydeerHead from '../../static/images/animals/babydeerhead.png'
 import imgRabbitToot from '../../static/images/animals/toot.png'
 import imgPapadeer from '../../static/images/animals/papa.png'
 
+// preview pages
+import page1 from '../../static/images/book-pages/en/page-1.png'
+import page2 from '../../static/images/book-pages/en/page-2.png'
+import page3 from '../../static/images/book-pages/en/page-3.png'
+import page4 from '../../static/images/book-pages/en/page-4.png'
+import page5 from '../../static/images/book-pages/en/page-5.png'
+import page6 from '../../static/images/book-pages/en/page-6.png'
+
+// Array-ify
 const veggieRainbow = [
   imgBellpepper,
   imgCarrots,
@@ -34,6 +43,14 @@ const veggieRainbow = [
   imgSpinach,
   imgEggplant,
   imgBeets,
+]
+const pages = [
+  page1,
+  page2,
+  page3,
+  page4,
+  page5,
+  page6,
 ]
 
 export default ({ data }) => {
@@ -43,7 +60,7 @@ export default ({ data }) => {
   useEffect(()=> {
     setFart(new UIfx(sound))
   },[])
-  
+
   return (
     <>
       <SEO
@@ -101,7 +118,7 @@ export default ({ data }) => {
         <Fade>
           <div className="section-look-inside">
             <h2 className="ta-center">Look Inside</h2>
-            <BookPreview />
+            <BookPreview pages={pages}/>
           </div>
         </Fade>
       </div>

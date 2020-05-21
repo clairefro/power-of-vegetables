@@ -27,6 +27,15 @@ import imgBabydeerHead from '../../static/images/animals/babydeerhead.png'
 import imgRabbitToot from '../../static/images/animals/toot.png'
 import imgPapadeer from '../../static/images/animals/papa.png'
 
+// preview pages
+import page1 from '../../static/images/book-pages/ja/page-1.jpg'
+import page2 from '../../static/images/book-pages/ja/page-2.jpg'
+import page3 from '../../static/images/book-pages/ja/page-3.jpg'
+import page4 from '../../static/images/book-pages/ja/page-4.jpg'
+import page5 from '../../static/images/book-pages/ja/page-5.jpg'
+import page6 from '../../static/images/book-pages/ja/page-6.jpg'
+
+// Array-ify
 const veggieRainbow = [
   imgBellpepper,
   imgCarrots,
@@ -34,6 +43,15 @@ const veggieRainbow = [
   imgSpinach,
   imgEggplant,
   imgBeets,
+]
+
+const pages = [
+  page1,
+  page2,
+  page3,
+  page4,
+  page5,
+  page6,
 ]
 
 export default ({ data }) => {
@@ -102,7 +120,7 @@ export default ({ data }) => {
         <Fade>
           <div className="section-look-inside">
             <h2 className="ta-center">試し読み</h2>
-            <BookPreview />
+            <BookPreview pages={pages}/>
           </div>
         </Fade>
       </div>

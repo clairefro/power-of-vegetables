@@ -16,7 +16,7 @@ export default () => (
     <div className="container">
       <div className="title-box">
         <h2 className="ta-center">絵本を買う</h2>
-        <p className="ta-center">Kindleおよびペーパーバック形式で販売中。 子供に同じ楽しい話をいくつかの言語で読んでみましょう！</p>
+        <p className="ta-center">Kindleおよびペーパーバック形式で販売中。子供に同じ楽しい話をいくつかの言語で読んでみましょう！</p>
       </div>
 
       <BookCard

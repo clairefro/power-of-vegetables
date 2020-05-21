@@ -17,6 +17,11 @@
       max-width: 300px;
       height: auto;
       box-shadow: $bs;
+      &:hover {
+        transform: scale(1.3);
+        transition: ease-in 0.1s;
+        cursor: zoom-in;
+      }
     }
   }
   .book-card-section-links {
@@ -74,6 +79,14 @@
   .book-card {
     max-width: 650px;
     justify-content: center;
+    .book-card-section-image {
+      img {
+        &:hover {
+          transform: none;
+          cursor: default;
+        }
+      }
+    }
     .book-card-section-links {
       justify-content: flex-start;
       flex-grow: 0;

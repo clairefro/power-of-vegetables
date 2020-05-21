@@ -13,14 +13,19 @@
     ul.thumbs {
       li.thumb {
         border: 3px solid transparent;
+
         img {
           margin:0 auto;
+
         }
         &.selected {
           border: 3px solid $green;
         }
         &:hover {
           border: 3px solid $yellow-light;
+        }
+        &:focus {
+          outline:solid $yellow-dark;
         }
       }
     }

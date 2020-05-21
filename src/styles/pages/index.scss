@@ -27,9 +27,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
-    width: 600px;
-  }
 }
 
 .review {
@@ -65,5 +62,74 @@
   }
   .review-author {
     text-align: right;
+  }
+}
+
+@media only screen and (max-width: $Tablets) {
+  .section-synopsis {
+    position: relative;
+    .d-horizontal {
+      justify-content: flex-end !important;
+    }
+    .deer-wrapper {
+      width: 200px;
+      img {
+        position: relative;
+        left: -159px;
+        height: 600px;
+        width: auto;
+        transform: rotate(05deg);
+      }
+    }
+  }
+  .section-features {
+    .d-horizontal {
+      flex-direction: column;
+      &.reverse {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Phones) {
+  .title-main {
+    font-size: 60px;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .large-vegetable {
+      display: none;
+    }
+    .textbox {
+      text-align: center;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .section-synopsis {
+    img {
+      display: none;
+    }
+  }
+  .section-features {
+    h3 {
+      font-size: 36px;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+  }
+  .review {
+    &:before {
+      left: -10px;
+    }
+    &:after {
+      right: 10px;
+    }
   }
 }

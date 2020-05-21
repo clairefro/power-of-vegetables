@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
+import { Link } from 'gatsby'
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 
@@ -96,7 +97,7 @@ const BookPreview = () => {
             className="book-preview-btn next"
           ><SVG src={iconArrow} style={{transform: 'rotate(270deg)'}}/></button>
         </AccessibleFocusOutline>
-        <a href="#" className="book-preview-read-more-link" style={{display: selected === totalPages ? 'block' : 'none' }}>Read more!</a>
+        <Link to="/books" className="book-preview-read-more-link" style={{display: selected === totalPages ? 'block' : 'none' }}>Read more!</Link>
       </div>
     </div>
   )

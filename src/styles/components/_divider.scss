@@ -3,3 +3,12 @@
   width: 100vw;
   background-size: 100% 200px ;
 }
+
+
+@media only screen and (max-width: $Phones) {
+  .divider {
+    height: 150px;
+    width: 100vw;
+    background-size: cover;
+  }
+}

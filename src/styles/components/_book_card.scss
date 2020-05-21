@@ -1,0 +1,140 @@
+.book-card {
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  .book-card-section-image {
+    position: relative;
+    min-width:300px;
+    h4 {
+      font-size: 32px;
+      text-align: center;
+      margin: auto 0;
+      margin-bottom: 8px;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      box-shadow: $bs;
+    }
+  }
+  .book-card-section-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    .link-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width:600px;
+      .book-link {
+        padding:50px;
+        margin: 40px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(50,50,50,0.2);
+        transition: ease 0.3s;
+        &:hover {
+          transition: ease 0.3s;
+          background-color: $yellow-dark;
+          svg {
+            fill: #FFF;
+            transition: ease 0.3s;
+          }
+        }
+        &.link-book {
+        padding: 40px;
+        }
+        svg {
+          width: 100%;
+          transition: ease 0.3s;
+          height: auto;
+        }
+        p {
+          position: absolute;
+          bottom: -50%;
+          text-align: center;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Tablets) {
+  .book-card {
+    max-width: 650px;
+    justify-content: center;
+    .book-card-section-links {
+      justify-content: flex-start;
+      flex-grow: 0;
+      .link-group {
+        flex-direction: column;
+        .book-link {
+          height: 80px;
+          width: 80px;
+          padding: 10px;
+          &.link-book {
+            padding: 15px;
+          }
+          &.link-ebook {
+            padding: 20px;
+          }
+          p {
+            bottom: -50px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Phones) {
+  .book-card {
+    max-width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .book-card-section-image {
+      img {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+      }
+    }
+    .book-card-section-links {
+      flex-grow: 0;
+      .link-group {
+        justify-content: space-between;
+        flex-direction: row;
+        .book-link {
+          height: 80px;
+          width: 80px;
+          padding: 10px;
+          margin: 10px 20px;
+          &.link-book {
+            padding: 15px;
+          }
+          &.link-ebook {
+            padding: 20px;
+          }
+          p {
+            bottom: -50px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

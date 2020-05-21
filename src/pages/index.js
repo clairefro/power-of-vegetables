@@ -1,7 +1,8 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
+import SEO from 'react-seo-component'
 
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
@@ -34,6 +35,15 @@ export default ({ data }) => {
   const lazyBellpepper = data.file.childImageSharp.fluid
   return (
     <>
+      <SEO
+        title="About"
+        titleTemplate="The Power of Vegetables"
+        description="A children's story"
+        image={imgBellpepper}
+        pathname="/"
+        siteLanguage="en"
+
+      />
       <div className="container">
         <Fade>
           <div className="section-title">
@@ -48,7 +58,7 @@ export default ({ data }) => {
               <h1 className="title-main">The Power of Vegetables</h1>
               <p>by Claire Froelich</p>
               <p>Illustrated by Varvara Fomina</p>
-              <a href="#" className="btn large">Read now</a>
+              <Link to="/books" className="btn large">Read now</Link>
             </div>
           </div>
         </Fade>
@@ -60,12 +70,14 @@ export default ({ data }) => {
       <div className="container">
         <Fade>
           <div className="section-synopsis d-horizontal">
-            <img src={imgBabydeer} alt="baby deer with open mouth" className="large-vegetable" id="title-image"/>
+            <div className="deer-wrapper">
+              <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
+            </div>
             <div className="textbox textbox-constrained">
               <h2>Synopsis</h2>
               <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
-              <h2 className="ta-center">~</h2>
-              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages questioning authority with our own observations. The story most importantly reminds us to laugh in life - and is best read aloud, not alone.
+              <h2 className="ta-center tilde">~</h2>
+              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
               </p>
             </div>
           </div>
@@ -95,12 +107,12 @@ export default ({ data }) => {
           <Fade>
             <div className="d-horizontal">
               <h3>Learn body parts</h3>
-              <img src={imgBabydeerHead} className="large-vegetable" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
+              <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>
           <Fade>
-            <div className="d-horizontal">
-              <img src={imgRabbitToot} className="large-vegetable" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
+            <div className="d-horizontal reverse">
+              <img src={imgRabbitToot} className="responsive mw-600" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
               <h3>Laugh together</h3>
             </div>
           </Fade>
@@ -112,7 +124,7 @@ export default ({ data }) => {
       <div className="container">
         <Fade>
           <div className="section-reviews">
-             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden"/>
+            <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden" className="responsive mw-600"/>
             <h2>Reviews</h2>
             <div className="review">
               <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>

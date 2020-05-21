@@ -43,9 +43,23 @@ button {
   border: none;
 }
 
+input {
+  background-color: $yellow-light;
+  border: none;
+  height: 2.5rem;
+  font-family: inherit;
+  font-size: 18px;
+  padding:10px 16px;
+  border-radius: 20px;
+  color: $yellow-dark;
+  &::placeholder {
+    color: rgba(0,0,0,0.3);
+  }
+}
+
 .page {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 420px;
   min-height: 100vh;
 }
 
@@ -56,7 +70,6 @@ button {
 .nav-spacer {
   height: 80px;
 }
-
 
 .btn {
   font-size: 24px;
@@ -105,5 +118,53 @@ button {
   align-items: center;
   h3 {
     margin: 80px;
+  }
+}
+
+img.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.mw-600 {
+  max-width: 600px;
+}
+
+@media only screen and (max-width: $Tablets) {
+  .textbox.textbox-constrained {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: $Phones) {
+  .container {
+    margin: 2rem;
+  }
+  .large-vegetable {
+    // display:none;
+  }
+  .textbox {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tilde {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+
+  .btn.large {
+    font-size: 36px;
+  }
+  .d-horizontal {
+    flex-direction: column;
+    &.reverse {
+      flex-direction: column-reverse;
+    }
   }
 }

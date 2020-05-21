@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import SVG from 'react-inlinesvg'
 
+import MailchimpSubscribeForm from './mailchimpSubscribeForm'
+
 import imgBackground from '../../static/images/accents/footer.png'
 
 import iconGlobe from '../../static/icons/globe.svg'
@@ -16,14 +18,14 @@ const Footer = () =>　{
 
         <div className="footer-columns">
           <div className="footer-column footer-col-1">
+            <Link to="/">Home</Link>
             <Link to="/books">Buy the book</Link>
             <Link to="/creators">About the Creators</Link>
-            <Link to="/contact">Contact</Link>
           </div>
           <div className="footer-column footer-col-2">
             <Link to="/books">Privacy Policy</Link>
             <Link to="/creators">About this site</Link>
-
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="footer-column footer-col-3">
             <div className="lang-component">
@@ -36,6 +38,7 @@ const Footer = () =>　{
             </div>
           </div>
         </div>
+        <MailchimpSubscribeForm lang={'en'} />
 
 
         <div className="mobile-footer mobile-only">
@@ -52,7 +55,7 @@ const Footer = () =>　{
         <div className="footer-copyright">
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
-        
+
       </div>
     </div>
   )

@@ -62,8 +62,8 @@ export default ({ data }) => {
             />
             <div className="textbox">
               <h1 className="title-main">やさいのちから</h1>
-              <p>さく クレア・フレリク</p>
-              <p>いらすと　バーバラ・フォミナ</p>
+              <p>作者　　　クレア・フレリク</p>
+              <p>イラスト　バーバラ・フォミナ</p>
               <Link
                 to="/books"
                 className="btn large"
@@ -86,10 +86,10 @@ export default ({ data }) => {
               <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
             </div>
             <div className="textbox textbox-constrained">
-              <h2>Synopsis</h2>
-              <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
+              <h2>あらすじ</h2>
+              <p>主人公の子ジカくんは、土で汚れた野菜よりも、甘いピーカンパイが好き。そんな子ジカくんに何とか野菜を食べてもらおうと、お父さんジカは、野菜が身体にくれる魔法の力を教えます。 しかし、真実は、必ずしも望んだとおりの形で明らかになるわけではないようです。。。</p>
               <h2 className="ta-center tilde">~</h2>
-              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
+              <p>一見、この本は、子どもたちに野菜を食べさせることだけを目的としているように思えるかもしれません。しかし、深く読み込んでいくと、大人になるつれ、「これは、恐らくああなるだろう」、などという固まった考えを持ってしまっているのではないか、と問われていることに気づくでしょう。生きていくうえで、最も重要なのは、常識や知識より、人生をユーモアの目で見ること。そのメッセージに、子どもに限らず、あらゆる年齢層の人が大きくうなずくことでしょう。
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default ({ data }) => {
       <div className="container">
         <Fade>
           <div className="section-look-inside">
-            <h2 className="ta-center">Look Inside</h2>
+            <h2 className="ta-center">試し読み</h2>
             <BookPreview />
           </div>
         </Fade>
@@ -112,20 +112,20 @@ export default ({ data }) => {
       <div className="container">
         <div className="section-features">
           <Fade>
-            <h3 className="ta-center">Learn colors with vegetables</h3>
+            <h3 className="ta-center">野菜で色を学ぶ</h3>
             <ImageCarousel images={veggieRainbow}/>
           </Fade>
 
           <Fade>
             <div className="d-horizontal">
-              <h3>Learn body parts</h3>
+              <h3>体の部分を学ぶ</h3>
               <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>
           <Fade>
             <div className="d-horizontal reverse">
               <img src={imgRabbitToot} className="responsive mw-600" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
-              <h3>Laugh together</h3>
+              <h3>一緒に笑う</h3>
             </div>
           </Fade>
         </div>
@@ -137,10 +137,10 @@ export default ({ data }) => {
         <Fade>
           <div className="section-reviews">
             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden" className="responsive mw-600"/>
-            <h2>Reviews</h2>
+            <h2>レビュー</h2>
             <div className="review">
               <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
-              <p className="review-author">- Kendra Baker, mother of toddler</p>
+              <p className="review-author">- ケンドラ‐・ベーカー、 お母さん</p>
             </div>
           </div>
         </Fade>

@@ -24,12 +24,14 @@ export default () => (
         lang="English"
         kindleLink="#"
         paperbackLink="#"
+        renderLang='ja'
       />
       <BookCard
         cover={imgJA}
         lang="Japanese"
         kindleLink="#"
         paperbackLink="#"
+        renderLang='ja'
       />
 
     </div>

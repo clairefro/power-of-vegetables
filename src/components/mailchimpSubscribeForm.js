@@ -16,7 +16,7 @@ const useFormFields = initialState => {
   ];
 };
 
-const MailchimpSubscribeForm = ({ lang }) => {
+const MailchimpSubscribeForm = ({ lang, data }) => {
   const url = "https://power-of-vegetables.us18.list-manage.com/subscribe/post?u=015049cbab3eb5168be909134&id=792c7ae23f"
   const { status, message, handleSubmit } = useMailChimpForm(url);
   const [params, handleFieldChange] = useFormFields({

@@ -4,8 +4,8 @@ import SEO from '../components/seo'
 import BookCard from '../components/bookCard'
 
 // images
-import imgEN from '../../static/images/thumbs/thumb_en.png'
-import imgJA from '../../static/images/thumbs/thumb_ja.png'
+import imgEN from '../../static/images/thumbs/thumb_en.jpg'
+import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
 
 export default () => (
   <div className="page-books">

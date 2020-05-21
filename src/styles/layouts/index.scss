@@ -59,7 +59,7 @@ input {
 
 .page {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 420px;
   min-height: 100vh;
 }
 
@@ -70,7 +70,6 @@ input {
 .nav-spacer {
   height: 80px;
 }
-
 
 .btn {
   font-size: 24px;
@@ -122,19 +121,11 @@ input {
   }
 }
 
-.img-wrapper {
-  display: flex;
-  min-height: auto;
-  min-width: 30px;
-  background-position: center;
-  background-size: contain;
-}
-
 img.responsive {
   width: 100%;
   height: auto;
-
 }
+
 .mw-600 {
   max-width: 600px;
 }

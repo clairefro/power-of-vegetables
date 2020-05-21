@@ -1,0 +1,57 @@
+.page-books {
+  .title-box {
+    width: auto;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .book-card {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    .book-card-section-image {
+      position: relative;
+      min-width:300px;
+      h4 {
+        font-size: 32px;
+        text-align: center;
+        margin: auto 0;
+        margin-bottom: 8px;
+      }
+      img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        box-shadow: $bs;
+      }
+    }
+    .book-card-section-links {
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      .link-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width:600px;
+        .book-link {
+          margin: 40px;
+          text-decoration: none;
+          color: inherit;
+          display: grid;
+          grid-auto-rows: 180px 1fr;
+          align-items: center;
+          justify-items: center;
+          svg {
+            width: 100px;
+            height: auto;
+          }
+          p {
+            text-align: center;
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+}

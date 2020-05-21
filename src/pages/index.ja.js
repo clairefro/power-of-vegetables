@@ -2,6 +2,7 @@ import React from "react"
 import Fade from 'react-reveal/Fade'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
+import UIfx from 'uifx'
 
 import SEO from '../components/seo'
 import { Link } from '../components/link'
@@ -17,6 +18,9 @@ import imgSpinach from '../../static/images/vegetables/spinach.png'
 import imgEggplant from '../../static/images/vegetables/eggplant.png'
 import imgBeets from '../../static/images/vegetables/beets.png'
 
+// sound
+import sound from '../../static/sounds/fart.mp3'
+
 // animals
 import imgBabydeer from '../../static/images/animals/babydeer.png'
 import imgBabydeerHead from '../../static/images/animals/babydeerhead.png'
@@ -31,6 +35,8 @@ const veggieRainbow = [
   imgEggplant,
   imgBeets,
 ]
+
+const fart = new UIfx(sound)
 
 export default ({ data }) => {
   const lazyBellpepper = data.file.childImageSharp.fluid
@@ -54,7 +60,13 @@ export default ({ data }) => {
               <h1 className="title-main">The Power of Vegetables</h1>
               <p>by Claire Froelich</p>
               <p>Illustrated by Varvara Fomina</p>
-              <Link to="/books" className="btn large">Read now</Link>
+              <Link
+                to="/books"
+                className="btn large"
+                onClick={() => fart.play()}
+              >
+                Read now
+              </Link>
             </div>
           </div>
         </Fade>

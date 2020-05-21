@@ -1,5 +1,6 @@
 import React from 'react'
 import SVG from 'react-inlinesvg'
+import UIfx from 'uifx'
 
 import { Link } from './link'
 import MailchimpSubscribeForm from './mailchimpSubscribeForm'
@@ -10,17 +11,22 @@ import imgBackground from '../../static/images/accents/footer.png'
 // icons
 import iconGlobe from '../../static/icons/globe.svg'
 
+import sound from '../../static/sounds/fart.mp3'
+
 // context
 import { usePageContext } from '../context/pageContext'
 
 // utils
 import { navigateToPageByLang } from '../util/navigateToPageByLang'
 
+const fart = new UIfx(sound)
+
 const Footer = () =>　{
   const { langKey: currentLang, slug } = usePageContext()
 
   const handleLangChange = (e) => {
     console.log(e.target.value)
+    fart.play()
     navigateToPageByLang(currentLang, e.target.value, slug)
   }
   return (

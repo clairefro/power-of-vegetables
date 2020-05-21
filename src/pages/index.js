@@ -2,6 +2,7 @@ import React from "react"
 import Fade from 'react-reveal/Fade'
 import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
+import SEO from 'react-seo-component'
 
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
@@ -34,6 +35,15 @@ export default ({ data }) => {
   const lazyBellpepper = data.file.childImageSharp.fluid
   return (
     <>
+      <SEO
+        title="About"
+        titleTemplate="The Power of Vegetables"
+        description="A children's story"
+        image={imgBellpepper}
+        pathname="/"
+        siteLanguage="en"
+
+      />
       <div className="container">
         <Fade>
           <div className="section-title">
@@ -67,7 +77,7 @@ export default ({ data }) => {
               <h2>Synopsis</h2>
               <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
               <h2 className="ta-center tilde">~</h2>
-              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages questioning authority with our own observations. The story most importantly reminds us to laugh in life - and is best read aloud, not alone.
+              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
               </p>
             </div>
           </div>

@@ -12,6 +12,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-layout`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
      resolve: `gatsby-source-filesystem`,
      options: {
@@ -19,9 +23,13 @@ module.exports = {
        path: `${__dirname}/static/images/`,
      },
    },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-layout`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+   {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false,
+        prefixDefault: false,
+      }
+    },
   ],
 }

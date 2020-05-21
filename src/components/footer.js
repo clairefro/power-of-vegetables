@@ -1,16 +1,27 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import SVG from 'react-inlinesvg'
 
+import { Link } from './link'
 import MailchimpSubscribeForm from './mailchimpSubscribeForm'
 
+// images
 import imgBackground from '../../static/images/accents/footer.png'
 
+// icons
 import iconGlobe from '../../static/icons/globe.svg'
 
+// context
+import { usePageContext } from '../context/pageContext'
+
+// utils
+import { navigateToPageByLang } from '../util/navigateToPageByLang'
+
 const Footer = () =>　{
+  const { langKey: currentLang, slug } = usePageContext()
+
   const handleLangChange = (e) => {
     console.log(e.target.value)
+    navigateToPageByLang(currentLang, e.target.value, slug)
   }
   return (
     <div className="footer" style={{ backgroundImage: `url('${imgBackground}')`}}>
@@ -45,9 +56,9 @@ const Footer = () =>　{
           <div className="lang-component">
             <SVG src={iconGlobe} className="footer-icon"/>
             <select name="lang-select" id="lang-select" onChange={handleLangChange}>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="ja">日本語</option>
+              <option value="en" selected={currentLang==='en'}>English</option>
+              <option value="fr" selected={currentLang==='fr'}>Français</option>
+              <option value="ja" selected={currentLang==='ja'}>日本語</option>
             </select>
           </div>
         </div>

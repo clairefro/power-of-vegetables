@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet-async'
 import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
 
+import { usePageContext } from '../context/pageContext'
+
 const SEO = ({
     title,
     titleTemplate,
@@ -22,7 +24,7 @@ const SEO = ({
 
   const { site } = useStaticQuery(query)
   const { pathname } = useLocation()
-  // const { langKey } = usePageContext()
+  const { langKey } = usePageContext()
 
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : site.siteMetadata.website
   const fullUrl = `${baseUrl}${pathname}`
@@ -34,8 +36,7 @@ const SEO = ({
     titleTemplate: "%s | The Power of Vegetables",
     description: `A children's book`,
     keywords: ['childrens book', 'picture book','kids','vegetables','humorous','toots','deer','animals','colors','reading'],
-    // lang: langKey,
-    lang: 'en',
+    lang: langKey,
     meta: [
       {
         name: 'viewport',
@@ -93,7 +94,7 @@ const SEO = ({
     link: link ? defaults.link.concat(link) : defaults.link,
     lang: lang || defaults.lang,
     og: {
-      title: ogTitle || title || defaults.title,
+      title: ogTitle ? defaults.titleTemplate.replace(/%s/, ogTitle) : defaults.titleTemplate.replace(/%s/, title),
       description: ogDescription || description || defaults.og.description,
       url: ogUrl || defaults.og.url,
       type: article ? 'article' : defaults.og.type,

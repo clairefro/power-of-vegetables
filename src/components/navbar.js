@@ -75,7 +75,7 @@ const Navbar = () => {
         fluid={bgImgData}
       >
         <div className={`nav-menu ${open ? "open" : null}`}>
-          <Link to="/" className="nav-menu-left"><img src={imgSmallPepper} alt="bell pepper" onClick={toggleMenu} /></Link>
+          <Link to="/" className="nav-menu-left"><img src={imgSmallPepper} alt="bell pepper" id="home-btn" onClick={toggleMenu} /></Link>
           <div className="nav-menu-right">
             <Link to="/creators" onClick={toggleMenu}>{t.creators[langKey]}</Link>
             <Link to="/books" className="cta" onClick={toggleMenu}>{t.buy[langKey]}</Link>

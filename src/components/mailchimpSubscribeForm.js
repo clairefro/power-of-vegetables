@@ -72,7 +72,7 @@ const t = {
   title: {
     en: "Get updates & coupons",
     fr: "Restez connecté avec nous",
-    ja: "<JAPANESE title>",
+    ja: "ニュースやお得な情報を購読する",
   },
   placeholder: {
     en: "you@email.com",
@@ -85,13 +85,13 @@ const t = {
     ja: "送信中...",
   },
   error: {
-    en: "Error, invalid email or already subscribed",
-    fr: "<FRENCH error>",
-    ja: "<JAPANESE error>",
+    en: "Error: invalid email or already subscribed",
+    fr: "Erreur: email invalide ou déjà abonné",
+    ja: "エラー：無効なメール、またはすでに登録済み",
   },
   success: {
     en: "Almost there! Click the link sent to your email to confirm.",
-    fr: "<FRENCH success>",
-    ja: "<JAPANESE success>",
+    fr: "Merci! Vérifiez votre e-mail pour confirmer.",
+    ja: "あともうちょい！メールを確認し、指示に従ってください。",
   },
 }

@@ -31,7 +31,7 @@ const Footer = () =>　{
             <LanguagePicker />
           </div>
         </div>
-        <MailchimpSubscribeForm lang={'en'} />
+        <MailchimpSubscribeForm />
 
 
         <div className="mobile-footer mobile-only">

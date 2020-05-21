@@ -4,8 +4,7 @@
   align-items: center;
   max-width: 800px;
   .book-card-section-image {
-    position: relative;
-    min-width:300px;
+    // min-width: 300px;
     h4 {
       font-size: 32px;
       text-align: center;
@@ -146,6 +145,7 @@
           p {
             bottom: -50px;
             font-size: 18px;
+            width: 131px;
           }
         }
       }

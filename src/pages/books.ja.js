@@ -39,3 +39,23 @@ export default () => (
     </div>
   </div>
 )
+
+// 
+// export const query = graphql`
+//   query {
+//     allFile(filter: {relativePath: {regex: "/thumbs/"}}) {
+//       nodes {
+//         childImageSharp {
+//           fluid {
+//             base64
+//             tracedSVG
+//             srcWebp
+//             srcSetWebp
+//             originalImg
+//             originalName
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

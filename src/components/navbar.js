@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
 // local
+import { Link } from './link'
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 
 // images

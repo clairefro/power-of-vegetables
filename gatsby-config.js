@@ -5,8 +5,17 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    image: "/images/og/og-image.jpg", // Path to image in the 'static' folder,
+    supportedLangs: ['en','fr','ja'], // for SEO alternate links
+    website: "https://www.power-of-vegetables.com",
+  },
   plugins: [
+    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-layout`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
      resolve: `gatsby-source-filesystem`,
      options: {
@@ -14,9 +23,13 @@ module.exports = {
        path: `${__dirname}/static/images/`,
      },
    },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-layout`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+   {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false,
+        prefixDefault: false,
+      }
+    },
   ],
 }

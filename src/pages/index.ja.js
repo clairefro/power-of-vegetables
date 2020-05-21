@@ -1,9 +1,11 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
-import SEO from 'react-seo-component'
+import UIfx from 'uifx'
 
+import SEO from '../components/seo'
+import { Link } from '../components/link'
 import Divider from '../components/divider'
 import BookPreview from '../components/bookPreview'
 import ImageCarousel from '../components/imageCarousel'
@@ -15,6 +17,9 @@ import imgSquash from '../../static/images/vegetables/squash.png'
 import imgSpinach from '../../static/images/vegetables/spinach.png'
 import imgEggplant from '../../static/images/vegetables/eggplant.png'
 import imgBeets from '../../static/images/vegetables/beets.png'
+
+// sound
+import sound from '../../static/sounds/fart.mp3'
 
 // animals
 import imgBabydeer from '../../static/images/animals/babydeer.png'
@@ -31,18 +36,15 @@ const veggieRainbow = [
   imgBeets,
 ]
 
+const fart = new UIfx(sound)
+
 export default ({ data }) => {
   const lazyBellpepper = data.file.childImageSharp.fluid
   return (
     <>
       <SEO
         title="About"
-        titleTemplate="The Power of Vegetables"
         description="A children's story"
-        image={imgBellpepper}
-        pathname="/"
-        siteLanguage="en"
-
       />
       <div className="container">
         <Fade>
@@ -58,7 +60,13 @@ export default ({ data }) => {
               <h1 className="title-main">The Power of Vegetables</h1>
               <p>by Claire Froelich</p>
               <p>Illustrated by Varvara Fomina</p>
-              <Link to="/books" className="btn large">Read now</Link>
+              <Link
+                to="/books"
+                className="btn large"
+                onClick={() => fart.play()}
+              >
+                Read now
+              </Link>
             </div>
           </div>
         </Fade>

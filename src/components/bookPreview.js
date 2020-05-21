@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
-import { Link } from 'gatsby'
+
+import { Link } from './link'
 
 import AccessibleFocusOutline from '../util/components/accessibleFocusOutline'
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Fade from 'react-reveal/Fade'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image/withIEPolyfill"
@@ -36,10 +36,14 @@ const veggieRainbow = [
   imgBeets,
 ]
 
-const fart = new UIfx(sound)
-
 export default ({ data }) => {
+  const [fart, setFart]= useState({play: ()=>console.log("can't play yet")})
   const lazyBellpepper = data.file.childImageSharp.fluid
+
+  useEffect(()=> {
+    setFart(new UIfx(sound))
+  },[])
+
   return (
     <>
       <SEO

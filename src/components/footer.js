@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import SVG from 'react-inlinesvg'
 import UIfx from 'uifx'
 
@@ -19,10 +19,15 @@ import { usePageContext } from '../context/pageContext'
 // utils
 import { navigateToPageByLang } from '../util/navigateToPageByLang'
 
-const fart = new UIfx(sound)
 
 const Footer = () =>　{
   const { langKey: currentLang, slug } = usePageContext()
+
+  const [fart, setFart]= useState({play: ()=>console.log("can't fart yet")})
+
+  useEffect(()=> {
+    setFart(new UIfx(sound))
+  },[])
 
   const handleLangChange = (e) => {
     console.log(e.target.value)

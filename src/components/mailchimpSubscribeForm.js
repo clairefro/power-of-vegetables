@@ -22,7 +22,7 @@ const MailchimpSubscribeForm = ({ lang, data }) => {
   const [params, handleFieldChange] = useFormFields({
     EMAIL: "",
     LANG: lang
-  });
+  })
   return (
     <>
     <div className="mailchimp-subscribe-form">
@@ -38,7 +38,7 @@ const MailchimpSubscribeForm = ({ lang, data }) => {
             placeholder="you@email.com"
             required
           />
-          <div className={`mailchimp-response`} >
+          <div className={`mailchimp-response`}>
           {status.loading && t.loading[lang]}
           {status.error && t.error[lang]}
           {status.success && t.success[lang]}

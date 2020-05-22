@@ -36,18 +36,6 @@ p, a {
   font-size: 24px;
 }
 
-a {
-  text-decoration: none;
-  color: $green;
-  svg {
-    fill: $green;
-  }
-  &:hover, &:hover svg {
-    color: $green-dark;
-    fill: $green-dark;
-  }
-}
-
 svg {
   fill: $black;
 }
@@ -92,11 +80,23 @@ input {
   padding: 16px 24px;
   text-decoration: none;
   a {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
   &.large {
     padding: 16px 40px;
     font-size: 48px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $green;
+  svg {
+    fill: $green;
+  }
+  &:hover, &:hover svg {
+    color: $green-dark;
+    fill: $green-dark;
   }
 }
 

@@ -36,6 +36,18 @@ p, a {
   font-size: 24px;
 }
 
+a {
+  text-decoration: none;
+  color: $green;
+  svg {
+    fill: $green;
+  }
+  &:hover, &:hover svg {
+    color: $green-dark;
+    fill: $green-dark;
+  }
+}
+
 svg {
   fill: $black;
 }
@@ -141,9 +153,7 @@ img.responsive {
   .container {
     margin: 2rem;
   }
-  .large-vegetable {
-    // display:none;
-  }
+
   .textbox {
     margin-left: 0;
     text-align: center;

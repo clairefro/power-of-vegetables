@@ -13,10 +13,10 @@ const useFormFields = initialState => {
       setValues({
         ...fields,
         [event.target.id]: event.target.value
-      });
+      })
     }
-  ];
-};
+  ]
+}
 
 const MailchimpSubscribeForm = () => {
   const { langKey } = usePageContext()

@@ -1,5 +1,4 @@
 import React from 'react'
-import SVG from 'react-inlinesvg'
 import { Link } from '../components/link'
 import Fade from 'react-reveal/Fade'
 import SEO from '../components/seo'

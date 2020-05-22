@@ -2,7 +2,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 
 import SEO from '../components/seo'
-import { Link } from '../components/link'
 
 export default () => (
   <div className="page-privacy">
@@ -28,7 +27,7 @@ export default () => (
                 <td>Cookie & Third-party data</td>
                 <td>Understand user behavior, gain insight on regional marketing</td>
                 <td>Google</td>
-                <td>If you would like to prevent Google Analytics from tracking your IP address, you can add this tool to Chrome: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" className="link" style={{fontSize: 'inherit'}} rel="noopener">Google Analytics opt-out addon</a>.</td>
+                <td>If you would like to prevent Google Analytics from tracking your IP address, you can add this tool to Chrome: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" className="link" style={{fontSize: 'inherit'}} rel="noopener noreferrer">Google Analytics opt-out addon</a>.</td>
               </tr>
               <tr>
                 <td>Third-party data</td>

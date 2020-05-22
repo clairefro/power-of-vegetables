@@ -84,8 +84,8 @@ export default ({ pageContext: {langKey}, data }) => {
                 <span className="w">の</span>
                 <span className="w">ちから</span>
               </h1>
-              <p><span className="w">作者　　</span><span className="w">クレア・フレリク</span></p>
-              <p><span className="w">イラスト　　</span><span className="w">バーバラ・フォミナ</span>　</p>
+              <p><span className="w" style={{marginRight: '6rem'}}>著者</span><span className="w">クレア・フレリク</span></p>
+              <p><span className="w" style={{marginRight: '2rem'}}>イラスト</span><span className="w">バーバラ・フォミナ</span>　</p>
               <Link
                 to="/books"
                 className="btn large"

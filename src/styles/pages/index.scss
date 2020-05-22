@@ -116,6 +116,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      span {
+        margin-right: 0 !important;
+        display: block;
+      }
     }
   }
   .section-synopsis {

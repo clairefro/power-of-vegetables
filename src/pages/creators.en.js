@@ -56,10 +56,10 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Miki Sugawara</strong></h3>
             <p><strong>Japanese Translator</strong></p>
-            <p>In-house interpretor and translator. While she may seem diligent she never misses a laugh.</p>
+            <p>In-house interpreter and translator. While she may seem diligent she never misses a laugh.</p>
           </div>
         </div>
-        
+
       </Fade>
     </div>
   </div>

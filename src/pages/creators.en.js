@@ -29,7 +29,7 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Claire Froelich</strong></h3>
             <p><strong>Author</strong></p>
-            <p>Moved by the funny things in life, inspired by her brother's comedically timed toots at the dinner table. Also a web developer, she made this website.</p>
+            <p>Moved by the funny things in life, inspired from a young age by her brother's comedically timed toots at the dinner table. Also a web developer, she made this website.</p>
             <p><p>clairefro.books@gmail.com</p></p>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Miki Sugawara</strong></h3>
             <p><strong>Japanese Translator</strong></p>
-            <p>Interpreter and translator. While she may seem diligent she never misses a laugh.</p>
+            <p>Interpreter and translator. While she may seem diligent she never misses a chance for a laugh.</p>
           </div>
         </div>
       </Fade>

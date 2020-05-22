@@ -38,17 +38,16 @@
     position: absolute;
     color: rgba(0,0,0,0.5);
     font-size: 60px;
+    top: 0;
   }
   &:before {
     content: '"';
-    left: -30px;
-    top: 0;
+    left: 0;
     transform: rotate(-10deg);
   }
   &:after {
     content: '"';
     right: 0;
-    top: 0;
     transform: rotate(10deg);
   }
   .review-text {
@@ -56,6 +55,7 @@
     color: rgba(0,0,0,0.5);
     font-size: 32px;
     line-height: 50px;
+    text-align: center;
     strong {
       color: $green;
     }
@@ -132,7 +132,7 @@
   }
   .review {
     &:before {
-      left: -10px;
+      left: 8px;
     }
     &:after {
       right: 10px;

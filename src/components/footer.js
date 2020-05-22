@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import { Link } from './link'
 import MailchimpSubscribeForm from './mailchimpSubscribeForm'
@@ -18,14 +18,14 @@ const Footer = () =>　{
 
         <div className="footer-columns">
           <div className="footer-column footer-col-1">
-            <Link to="/">Home</Link>
-            <Link to="/books">Buy the book</Link>
-            <Link to="/creators">About the Creators</Link>
+            <Link to="/">{t.home[currentLang]}</Link>
+            <Link to="/books">{t.buy[currentLang]}</Link>
+            <Link to="/creators">{t.creators[currentLang]}</Link>
           </div>
           <div className="footer-column footer-col-2">
-            <Link to="/books">Privacy Policy</Link>
-            <Link to="/creators">About this site</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/privacy">{t.privacy[currentLang]}</Link>
+            <Link to="/site">{t.site[currentLang]}</Link>
+            <Link to="/contact">{t.contact[currentLang]}</Link>
           </div>
           <div className="footer-column footer-col-3">
             <LanguagePicker />
@@ -48,3 +48,36 @@ const Footer = () =>　{
 }　
 
 export default Footer
+
+const t = {
+  home: {
+    en: "Home",
+    ja: "ホーム",
+    fr: "Accueil",
+  },
+  buy: {
+    en: "Buy the book",
+    ja: "絵本を買う",
+    fr: "Achetez le livre",
+  },
+  creators: {
+    en: "About the Creators",
+    ja: "クリエーターについて",
+    fr: "Sur les créateurs",
+  },
+  privacy: {
+    en: "Privacy Policy",
+    ja: "プライバシー ポリシー",
+    fr: "Politique de confidentialité",
+  },
+  site: {
+    en: "About this site",
+    ja: "サイト情報",
+    fr: "Information site",
+  },
+  contact: {
+    en: "Contact",
+    ja: "お問い合わせ",
+    fr: "Contact",
+  }
+}

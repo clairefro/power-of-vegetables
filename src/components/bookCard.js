@@ -1,6 +1,7 @@
 import React from 'react'
 import SVG from 'react-inlinesvg'
 import PropTypes from 'prop-types'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 // icons
 import iconBook from  '../../static/icons/book.svg'
@@ -15,16 +16,16 @@ const BookCard = ({ cover, lang, kindleLink, paperbackLink, renderLang }) => (
     <div className="book-card-section-links">
       <div className="link-group">
         {kindleLink && (
-          <a href={kindleLink} target="_blank" className="book-link link-ebook">
+          <OutboundLink href={kindleLink} target="_blank" rel="noopener" className="book-link link-ebook">
             <SVG src={iconEbook} className="icon-ebook"/>
             <p>Kindle</p>
-          </a>
+          </OutboundLink>
         )}
         {paperbackLink && (
-          <a href={paperbackLink} target="_blank" className="book-link link-book">
+          <OutboundLink href={paperbackLink} target="_blank" className="book-link link-book">
             <SVG src={iconBook}/>
             <p>{t.paperback[renderLang] || t.paperback.en}</p>
-          </a>
+          </OutboundLink>
         )}
       </div>
     </div>

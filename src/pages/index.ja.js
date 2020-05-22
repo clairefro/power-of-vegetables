@@ -54,7 +54,7 @@ const pages = [
   page6,
 ]
 
-export default ({ data }) => {
+export default ({ pageContext: {langKey}, data }) => {
   const [fart, setFart]= useState({play: ()=>console.log("can't play yet")})
   const lazyBellpepper = data.file.childImageSharp.fluid
 
@@ -75,13 +75,17 @@ export default ({ data }) => {
               fluid={lazyBellpepper}
               alt="bell pepper"
               objectFit="contain"
-              className="large-vegetable"
+              className={`large-vegetable title-pepper ${langKey === 'ja' ? 'ja' : ''} `}
               id="title-image"
             />
             <div className="textbox">
-              <h1 className="title-main">やさいのちから</h1>
-              <p>作者　　　クレア・フレリク</p>
-              <p>イラスト　バーバラ・フォミナ</p>
+              <h1 className="title-main">
+                <span className="w">やさい</span>
+                <span className="w">の</span>
+                <span className="w">ちから</span>
+              </h1>
+              <p><span className="w" style={{marginRight: '6rem'}}>著者</span><span className="w">クレア・フレリク</span></p>
+              <p><span className="w" style={{marginRight: '2rem'}}>イラスト</span><span className="w">バーバラ・フォミナ</span>　</p>
               <Link
                 to="/books"
                 className="btn large"
@@ -130,20 +134,20 @@ export default ({ data }) => {
       <div className="container">
         <div className="section-features">
           <Fade>
-            <h3 className="ta-center">野菜で色を学ぶ</h3>
+            <h3 className="ta-center"><span className="w">野菜で</span><span className="w">色を</span><span className="w">学ぶ</span></h3>
             <ImageCarousel images={veggieRainbow}/>
           </Fade>
 
           <Fade>
             <div className="d-horizontal">
-              <h3>体の部分を学ぶ</h3>
+              <h3><span className="w">体の</span><span className="w">部分を</span><span className="w">学ぶ</span></h3>
               <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>
           <Fade>
             <div className="d-horizontal reverse">
               <img src={imgRabbitToot} className="responsive mw-600" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
-              <h3>一緒に笑う</h3>
+              <h3><span className="w">一緒に</span><span className="w">笑う</span></h3>
             </div>
           </Fade>
         </div>

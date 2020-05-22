@@ -18,6 +18,10 @@
     img {
       max-width: 400px;
       border-radius: 50%;
+      box-shadow: $bs;
+    }
+    p {
+      font-size: 16px;
     }
   }
   .creator-section-text {
@@ -49,6 +53,12 @@
       text-align: center;
       padding: 1rem 2rem;
       max-width: 600px;
+      h3 {
+        font-size: 32px;
+      }
+      a {
+        justify-content: center;
+      }
     }
   }
 }

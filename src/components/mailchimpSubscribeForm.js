@@ -13,10 +13,10 @@ const useFormFields = initialState => {
       setValues({
         ...fields,
         [event.target.id]: event.target.value
-      });
+      })
     }
-  ];
-};
+  ]
+}
 
 const MailchimpSubscribeForm = () => {
   const { langKey } = usePageContext()
@@ -91,7 +91,7 @@ const t = {
   error: {
     en: "Error: invalid email or already subscribed",
     fr: "Erreur: email invalide ou déjà abonné",
-    ja: "エラー：無効なメール、またはすでに登録済み",
+    ja: "エラー：無効なメールアドレス、またはすでに登録済み",
   },
   success: {
     en: "Almost there! Click the link sent to your email to confirm.",

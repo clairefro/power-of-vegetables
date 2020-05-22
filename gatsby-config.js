@@ -11,6 +11,13 @@ module.exports = {
     website: "https://www.power-of-vegetables.com",
   },
   plugins: [
+    {
+     resolve: `gatsby-plugin-google-analytics`,
+     options: {
+       trackingId: "UA-156562589-1",
+       respectDNT: true,
+     },
+   },
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-layout`,

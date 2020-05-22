@@ -92,6 +92,12 @@
   }
 }
 
+
+@media only screen and (max-width: 832px) {
+  .title-pepper.ja {
+    display: none;
+  }
+}
 @media only screen and (max-width: $Phones) {
   .title-main {
     font-size: 60px;

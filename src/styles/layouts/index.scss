@@ -59,6 +59,11 @@ input {
   }
 }
 
+// for controlling line-breaking of Japanese words
+.w {
+  display: inline-block;
+}
+
 .page {
   position: relative;
   padding-bottom: 420px;

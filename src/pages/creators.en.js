@@ -6,6 +6,7 @@ import SEO from '../components/seo'
 // images
 import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
+import imgSuga from '../../static/images/creators/suga.jpg'
 
 // icons
 import iconInstagram from '../../static/icons/instagram.svg'
@@ -23,6 +24,7 @@ export default () => (
         <div className="creator">
           <div className="creator-section-img">
             <img src={imgClaire} className="responsive" alt="Claire Froelich"/>
+            <p className="ta-center">photo by Anastasia Mayamsina</p>
           </div>
           <div className="creator-section-text">
             <h3><strong>Claire Froelich</strong></h3>
@@ -30,8 +32,8 @@ export default () => (
             <p>Moved by the funny things in life, inspired by her brother's comedic tooting at the dinner table. Also a web developer, she made this website.</p>
           </div>
         </div>
-      </Fade>
-      <Fade>
+
+
         <div className="creator reverse">
           <div className="creator-section-img">
             <img src={imgVarvara} className="responsive" alt="Varvara Fomina"/>
@@ -46,6 +48,18 @@ export default () => (
             </a>
           </div>
         </div>
+
+        <div className="creator">
+          <div className="creator-section-img">
+            <img src={imgSuga} className="responsive" alt="Miki Sugawara"/>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>Miki Sugawara</strong></h3>
+            <p><strong>Japanese Translator</strong></p>
+            <p>In-house interpretor and translator. While she may seem diligent she never misses a laugh.</p>
+          </div>
+        </div>
+        
       </Fade>
     </div>
   </div>

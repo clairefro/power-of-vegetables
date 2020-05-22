@@ -27,7 +27,7 @@ export default () => (
                 <td>Cookie & Third-party data</td>
                 <td>Understand user behavior, gain insight on regional marketing</td>
                 <td>Google</td>
-                <td>If you would like to prevent Google Analytics from tracking your IP address, you can add this tool to Chrome: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" className="link" style={{fontSize: 'inherit'}} rel="noopener noreferrer">Google Analytics opt-out addon</a>.</td>
+                <td>Tracks <a href="https://support.google.com/analytics/answer/2799357?hl=en&utm_id=ad" target="_blank" className="link" style={{fontSize: 'inherit'}} rel="noopener noreferrer">demographics</a>, pages visited, and links clicked. If you would like to prevent Google Analytics from tracking you, you can add this tool to Chrome: <a href="https://tools.google.com/dlpage/gaoptout"  target="_blank" className="link" style={{fontSize: 'inherit'}} rel="noopener noreferrer">Google Analytics opt-out addon</a>.</td>
               </tr>
               <tr>
                 <td>Third-party data</td>

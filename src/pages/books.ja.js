@@ -15,7 +15,7 @@ export default () => (
     />
     <div className="container">
       <div className="title-box">
-        <h2 className="ta-center">絵本を買う</h2>
+        <h2 className="ta-center"><span className="w">絵本を</span><span className="w">買う</span></h2>
         <p className="ta-center">Kindleおよびペーパーバック形式で販売中。子供に同じ楽しい話をいくつかの言語で読んでみましょう！</p>
       </div>
 
@@ -40,7 +40,7 @@ export default () => (
   </div>
 )
 
-// 
+//
 // export const query = graphql`
 //   query {
 //     allFile(filter: {relativePath: {regex: "/thumbs/"}}) {

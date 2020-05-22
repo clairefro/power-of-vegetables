@@ -1,0 +1,54 @@
+.creator {
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1100px;
+  margin-bottom: 60px;
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .creator-section-img {
+    img {
+      max-width: 400px;
+      border-radius: 50%;
+    }
+  }
+  .creator-section-text {
+    padding: 2rem;
+    max-width: 600px;
+  }
+}
+
+
+@media only screen and (max-width: $Tablets) {
+  .creator {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    &.reverse {
+      flex-direction: column;
+    }
+
+    .creator-section-img {
+      img {
+        max-width: 400px;
+        border-radius: 50%;
+      }
+    }
+    .creator-section-text {
+      text-align: center;
+      padding: 1rem 2rem;
+      max-width: 600px;
+    }
+  }
+}

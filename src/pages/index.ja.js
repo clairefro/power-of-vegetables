@@ -101,6 +101,7 @@ export default ({ pageContext: {langKey}, data }) => {
 
       <Divider />
 
+      <a id="synopsis"></a>
       <div className="container">
         <Fade>
           <div className="section-synopsis d-horizontal">

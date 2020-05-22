@@ -94,20 +94,23 @@ export default ({ data }) => {
 
 
       <Divider />
-
+      
+      <a id="synopsis"></a>
       <div className="container">
         <Fade>
           <div className="section-synopsis d-horizontal">
-            <div className="deer-wrapper">
-              <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
-            </div>
-            <div className="textbox textbox-constrained">
-              <h2>Synopsis</h2>
-              <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
-              <h2 className="ta-center tilde">~</h2>
-              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
-              </p>
-            </div>
+              <div className="deer-wrapper">
+                <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
+              </div>
+              <div className="textbox textbox-constrained">
+                <h2>Synopsis</h2>
+                <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
+                <h2 className="ta-center tilde">~</h2>
+                <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
+                </p>
+              </div>
+
+
           </div>
         </Fade>
       </div>

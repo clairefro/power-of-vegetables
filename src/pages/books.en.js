@@ -2,6 +2,7 @@ import React from 'react'
 
 import SEO from '../components/seo'
 import BookCard from '../components/bookCard'
+import { Link } from '../components/link'
 
 // images
 import imgEN from '../../static/images/thumbs/thumb_en.jpg'
@@ -17,6 +18,7 @@ export default () => (
       <div className="title-box">
         <h2 className="ta-center">Buy the book</h2>
         <p className="ta-center">Available in Kindle and paperback formats. Expose your child the same fun story in several languages!</p>
+        <Link to="/#synopsis" className="link">About the book</Link>
       </div>
 
       <BookCard

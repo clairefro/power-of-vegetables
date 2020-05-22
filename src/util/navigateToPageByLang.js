@@ -4,9 +4,11 @@
 
 import { navigate } from 'gatsby'
 export const navigateToPageByLang = (currentLang, selectedLang, currentSlug) => {
+  if(currentLang===undefined) {
+    navigate(`/`)
+  }
   // do nothing if already on page of selected lang
   if (selectedLang === currentLang) return null
-
   if (currentSlug === undefined) return navigate('/')
 
   // handle homepage specially

@@ -23,8 +23,8 @@ const Footer = () =>　{
             <Link to="/creators">{t.creators[currentLang]}</Link>
           </div>
           <div className="footer-column footer-col-2">
-            <Link to="/books">{t.privacy[currentLang]}</Link>
-            <Link to="/creators">{t.site[currentLang]}</Link>
+            <Link to="/privacy">{t.privacy[currentLang]}</Link>
+            <Link to="/site">{t.site[currentLang]}</Link>
             <Link to="/contact">{t.contact[currentLang]}</Link>
           </div>
           <div className="footer-column footer-col-3">
@@ -72,7 +72,7 @@ const t = {
   },
   site: {
     en: "About this site",
-    ja: "このサイトについて",
+    ja: "サイト情報",
     fr: "Information site",
   },
   contact: {

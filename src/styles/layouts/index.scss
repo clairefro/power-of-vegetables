@@ -45,6 +45,14 @@ button {
   border: none;
 }
 
+table {
+  tr {
+    td {
+      padding: 1rem 0;
+    }
+  }
+}
+
 input {
   background-color: $yellow-light;
   border: none;
@@ -103,6 +111,10 @@ input {
     color: $green-dark;
     fill: $green-dark;
   }
+}
+.text {
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .textbox {
@@ -165,6 +177,9 @@ img.responsive {
   .container {
     margin: 2rem;
   }
+  .text {
+    text-align: center;
+  }
 
   .textbox {
     margin-left: 0;
@@ -181,6 +196,8 @@ img.responsive {
   h3 {
     font-size: 48px;
   }
+
+
 
   .btn.large {
     font-size: 36px;

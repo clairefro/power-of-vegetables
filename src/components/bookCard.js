@@ -15,13 +15,13 @@ const BookCard = ({ cover, lang, kindleLink, paperbackLink, renderLang }) => (
     <div className="book-card-section-links">
       <div className="link-group">
         {kindleLink && (
-          <a href={kindleLink} target="_blank" rel="noreferrer" className="book-link link-ebook">
+          <a href={kindleLink} target="_blank" rel="noopener" className="book-link link-ebook">
             <SVG src={iconEbook} className="icon-ebook"/>
             <p>Kindle</p>
           </a>
         )}
         {paperbackLink && (
-          <a href={paperbackLink} target="_blank" rel="noreferrer" className="book-link link-book">
+          <a href={paperbackLink} target="_blank" rel="noopener" className="book-link link-book">
             <SVG src={iconBook}/>
             <p>{t.paperback[renderLang] || t.paperback.en}</p>
           </a>

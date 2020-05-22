@@ -43,7 +43,7 @@ export default () => (
             <h3><strong>Varvara Fomina</strong></h3>
             <p><strong>Illustrator</strong></p>
             <p>Enthusiastic freelance illustrator whose passion is to dive into others' storytelling, whether it be tooting deer or nuclear science.</p>
-            <a href="https://www.instagram.com/barbara.fomina/" target="_blank" rel="noreferrer" className="link d-flex" style={{ alignItems: 'center'}}>
+            <a href="https://www.instagram.com/barbara.fomina/" target="_blank" rel="noopener" className="link d-flex" style={{ alignItems: 'center'}}>
               <SVG src={iconInstagram}/>
               <span style={{marginLeft: '0.5rem'}}>barbara.fomina</span>
             </a>

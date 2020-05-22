@@ -17,8 +17,8 @@ export default () => (
       title="クリエーター"
       description="『やさいのちから』作者：クレア・フレリク。イラスト：バーバラ・フォミナ。"
     />
-    <div className="container">
-      <Fade>
+    <Fade>
+      <div className="container">
         <h2 className="ta-center">クリエーター</h2>
 
         <div className="creator">
@@ -43,7 +43,7 @@ export default () => (
             <h3><strong>バーバラ・フォミナ</strong></h3>
             <p><strong>イラストレーター</strong></p>
             <p>現在、フリーランスのイラストレーターとして活動。バーバラ・フォミナのイラスト制作に注ぐ情熱は、言葉では言いつくせない。テーマを問わず、物語がさらに生き生きとするようなイラストを描き続けている。</p>
-            <a href="https://www.instagram.com/barbara.fomina/" target="_blank" rel="noreferrer" className="link d-flex" style={{ alignItems: 'center'}}>
+            <a href="https://www.instagram.com/barbara.fomina/" target="_blank" rel="noopener" className="link d-flex" style={{ alignItems: 'center'}}>
               <SVG src={iconInstagram}/>
               <span style={{marginLeft: '0.5rem'}}>barbara.fomina</span>
             </a>
@@ -61,7 +61,7 @@ export default () => (
           </div>
         </div>
 
-      </Fade>
-    </div>
+      </div>
+    </Fade>
   </div>
 )

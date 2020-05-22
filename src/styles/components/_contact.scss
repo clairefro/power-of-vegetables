@@ -1,0 +1,43 @@
+.contact-form {
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 24px;
+  max-width: 800px;
+  form.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: $black;
+    padding: 4rem 6rem;
+    width: 100%;
+    > *:focus {
+      outline-color: #FFF;
+    }
+    label {
+      color: $yellow-light;
+    }
+    input, textarea {
+      font-size: 24px;
+      flex-grow: 1;
+      margin: 0.5rem 0 2rem 0;
+      background-color: $yellow-light;
+      border-radius: 20px;
+      color: $yellow-dark;
+    }
+    textarea {
+      padding: 1rem;
+      font-family: serif;
+    }
+    input {
+      padding: 0.5rem 1rem;
+    }
+    button {
+      width: max-content;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      font-family: inherit;
+      font-size: 24px;
+      background-color: $green;
+      color: $yellow-light;
+    }
+  }
+}

@@ -96,10 +96,12 @@ export default Navbar
 const t = {
   creators: {
     en: "Creators",
-    ja: "クリエーター"
+    ja: "クリエーター",
+    fr: "Créateurs",
   },
   buy: {
     en: "Buy now",
-    ja: "購入"
+    ja: "購入",
+    fr: "Achetez",
   }
 }

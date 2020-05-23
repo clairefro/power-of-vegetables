@@ -218,6 +218,6 @@ const t = {
   tt: {
     en: "%s | The Power of Vegetables",
     fr: "%s | The Power of Vegetables",
-    ja: "%s ★ やさいのちから",
+    ja: "%s　〜　『やさいのちから』",
   }
 }

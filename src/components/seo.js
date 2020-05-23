@@ -48,19 +48,16 @@ const SEO = ({
         rel: "canonical",
         href: canonical || fullUrl,
       },
-      // {
-      //   rel: 'icon',
-      //   href: favicon,
-      // },
     ]
     // language alternate tags
     .concat(site.siteMetadata.supportedLangs.map(lng=> {
-      if (lng === 'en' && pathname.split('/').splice(2).join('/') === '') {
+      if (lng === 'en') {
+        console.log(`${baseUrl}/${pathname.split('/').splice(2).join('/')}`)
         return (
           {
             rel: 'alternate',
             hreflang: lng,
-            href: `${baseUrl}/`
+            href: `${baseUrl}/${pathname.split('/').splice(2).join('/')}`
           }
         )
       } else {

@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
   let style = { fontFamily: "'Gentium Book Basic', serif"}
 
-  if (langKey === 'ja') {
+  if (langKey === 'ja' || langKey === undefined) {
     style.fontFamily = "'Noto Serif JP', serif"　
   }
 

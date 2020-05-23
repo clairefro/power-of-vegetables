@@ -17,7 +17,7 @@ export default () => (
     <div className="container">
       <div className="title-box">
         <h2 className="ta-center">Buy the book</h2>
-        <p className="ta-center">Available in Kindle and paperback formats. Expose your child the same fun story in several languages!</p>
+        <p className="ta-center">Available in Kindle and paperback formats. Read the same fun story to your child in several languages!</p>
         <Link to="/#synopsis" className="link">About the book</Link>
       </div>
 

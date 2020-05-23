@@ -46,11 +46,17 @@ button {
 }
 
 table {
+  overflow-x:scroll;
   tr {
     td {
-      padding: 1rem 0;
+      padding: 1rem;
     }
   }
+}
+
+.overflow-x-container {
+  height: auto;
+  overflow-x: auto !important;
 }
 
 input {
@@ -171,6 +177,11 @@ img.responsive {
 @media only screen and (max-width: $Tablets) {
   .textbox.textbox-constrained {
     margin-left: 0;
+  }
+}
+@media only screen and (max-width: 925px) {
+  .btn.large.fr {
+    font-size: 26px
   }
 }
 @media only screen and (max-width: $Phones) {

@@ -1,7 +1,9 @@
 import React from 'react'
 import SVG from 'react-inlinesvg'
 import Fade from 'react-reveal/Fade'
+
 import SEO from '../components/seo'
+import { Link } from '../components/link'
 
 // images
 import imgClaire from '../../static/images/creators/claire.jpg'
@@ -29,8 +31,8 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Claire Froelich</strong></h3>
             <p><strong>Author</strong></p>
-            <p>Moved by the funny things in life, inspired by her brother's comedically timed toots at the dinner table. Also a web developer, she made this website.</p>
-            <p><p>clairefro.books@gmail.com</p></p>
+            <p>Inspired by her brother's comedically timed toots at the dinner table. Also a web developer, she made this website.</p>
+            <p><Link to="contact" className="link">Contact</Link></p>
           </div>
         </div>
 

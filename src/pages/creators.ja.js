@@ -1,7 +1,9 @@
 import React from 'react'
 import SVG from 'react-inlinesvg'
 import Fade from 'react-reveal/Fade'
+
 import SEO from '../components/seo'
+import { Link } from '../components/link'
 
 // images
 import imgClaire from '../../static/images/creators/claire.jpg'
@@ -30,7 +32,7 @@ export default () => (
             <h3><strong>クレア・フレリク</strong></h3>
             <p><strong>著者</strong></p>
             <p>「笑いは最高の薬」がセリフ。ウェブディベロッパーでもあり、このサイトを作った。</p>
-            <p>clairefro.books@gmail.com</p>
+            <p><Link to="contact" className="link">お問い合わせはこちら</Link></p>
           </div>
         </div>
 

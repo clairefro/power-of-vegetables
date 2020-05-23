@@ -64,7 +64,7 @@ export default ({ data }) => {
   return (
     <>
       <SEO
-        title="Home"
+        title="Accueil "
         description="Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice..."
       />
       <div className="container">
@@ -72,26 +72,25 @@ export default ({ data }) => {
           <div className="section-title">
             <Img
               fluid={lazyBellpepper}
-              alt="bell pepper"
+              alt="un poivron"
               objectFit="contain"
               className="large-vegetable"
               id="title-image"
             />
             <div className="textbox">
-              <h1 className="title-main">The Power of Vegetables</h1>
-              <p>by Claire Froelich</p>
-              <p>Illustrated by Varvara Fomina</p>
+              <h1 className="title-main">Le pouvoir des légumes</h1>
+              <p>Texte de Claire Froelich</p>
+              <p>Illustré par Varvara Fomina</p>
               <Link to="/books"
-                className="btn large"
+                className="btn large fr"
                 onClick={() => fart.play()}
               >
-                Read now
+                Lisez maintenant
               </Link>
             </div>
           </div>
         </Fade>
       </div>
-
 
       <Divider />
 
@@ -100,17 +99,15 @@ export default ({ data }) => {
         <Fade>
           <div className="section-synopsis d-horizontal">
               <div className="deer-wrapper">
-                <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
+                <img src={imgBabydeer} alt="bébé chevreuil avec la bouche ouverte" className="responsive mw-600" id="title-image"/>
               </div>
               <div className="textbox textbox-constrained">
                 <h2>Synopsis</h2>
-                <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
+                <p>Bébé chevreuil préfère les tartes aux noix de pécan sucrées aux légumes sales - jusqu'à ce que Papa chevreuil nous apprenne les pouvoirs magiques que ces légumes nous donnent. Mais toutes les vérités ne se révèlent pas sous forme de conseils...</p>
                 <h2 className="ta-center tilde">~</h2>
-                <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Most importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
+                <p>En surface, ce livre est un morceau de propagande pour amener les enfants à manger leurs légumes. Plus subtilement, il encourage les lecteurs à remettre en question l'autorité par leurs propres observations. Plus important encore, cette histoire nous rappelle qu'il faut rire dans la vie - c'est pourquoi il vaut mieux la lire à voix haute, et non seule.
                 </p>
               </div>
-
-
           </div>
         </Fade>
       </div>
@@ -120,7 +117,7 @@ export default ({ data }) => {
       <div className="container">
         <Fade>
           <div className="section-look-inside">
-            <h2 className="ta-center">Look Inside</h2>
+            <h2 className="ta-center">Regardez à l'intérieur</h2>
             <BookPreview pages={pages}/>
           </div>
         </Fade>
@@ -131,32 +128,31 @@ export default ({ data }) => {
       <div className="container">
         <div className="section-features">
           <Fade>
-            <h3 className="ta-center">Learn colors with vegetables</h3>
+            <h3 className="ta-center">Apprenez les couleurs avec les légumes</h3>
             <ImageCarousel images={veggieRainbow}/>
           </Fade>
 
           <Fade>
             <div className="d-horizontal">
-              <h3>Learn body parts</h3>
+              <h3>Apprenez les parties du corps</h3>
               <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>
           <Fade>
             <div className="d-horizontal reverse">
               <img src={imgRabbitToot} className="responsive mw-600" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
-              <h3>Laugh together</h3>
+              <h3>Riez ensemble</h3>
             </div>
           </Fade>
         </div>
       </div>
-
 
       <Divider />
       <div className="container">
         <Fade>
           <div className="section-reviews">
             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden" className="responsive mw-600"/>
-            <h2>Reviews</h2>
+            <h2>Commentaires</h2>
             <div className="review">
               <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
               <p className="review-author">- Kendra Baker, mother of toddler</p>

@@ -179,6 +179,11 @@ img.responsive {
     margin-left: 0;
   }
 }
+@media only screen and (max-width: 925px) {
+  .btn.large.fr {
+    font-size: 26px
+  }
+}
 @media only screen and (max-width: $Phones) {
   .container {
     margin: 2rem;

@@ -217,7 +217,7 @@ const query = graphql`
 const t = {
   tt: {
     en: "%s | The Power of Vegetables",
-    fr: "%s | The Power of Vegetables",
+    fr: "%s | « Le pouvoir des légumes »",
     ja: "%s　〜　『やさいのちから』",
   }
 }

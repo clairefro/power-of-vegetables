@@ -11,7 +11,7 @@ export default () => (
     />
     <Fade>
       <div className="container">
-        <h2 className="ta-center">プライバシーポリシー</h2>
+        <h2 className="ta-center"><span className="w">プライバシー</span><span className="w">ポリシー</span></h2>
           <div className="text overflow-x-container">
             <p>最終更新　令和2年5月22日</p>
             <p>本サイトはcookie（クッキー）と第三者のデータサービスを使用して、マーケティングの洞察を取得し、顧客関係を維持し、同サイトの機能性を向上させていただきます。</p>

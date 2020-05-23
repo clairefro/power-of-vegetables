@@ -46,11 +46,17 @@ button {
 }
 
 table {
+  overflow-x:scroll;
   tr {
     td {
-      padding: 1rem 0;
+      padding: 1rem;
     }
   }
+}
+
+.overflow-x-container {
+  height: auto;
+  overflow-x: auto !important;
 }
 
 input {

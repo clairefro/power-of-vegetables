@@ -28,12 +28,12 @@ import imgRabbitToot from '../../static/images/animals/toot.png'
 import imgPapadeer from '../../static/images/animals/papa.png'
 
 // preview pages
-import page1 from '../../static/images/book-pages/en/page-1.png'
-import page2 from '../../static/images/book-pages/en/page-2.png'
-import page3 from '../../static/images/book-pages/en/page-3.png'
-import page4 from '../../static/images/book-pages/en/page-4.png'
-import page5 from '../../static/images/book-pages/en/page-5.png'
-import page6 from '../../static/images/book-pages/en/page-6.png'
+import page1 from '../../static/images/book-pages/en/page-1.jpg'
+import page2 from '../../static/images/book-pages/en/page-2.jpg'
+import page3 from '../../static/images/book-pages/en/page-3.jpg'
+import page4 from '../../static/images/book-pages/en/page-4.jpg'
+import page5 from '../../static/images/book-pages/en/page-5.jpg'
+import page6 from '../../static/images/book-pages/en/page-6.jpg'
 
 // Array-ify
 const veggieRainbow = [
@@ -64,8 +64,8 @@ export default ({ data }) => {
   return (
     <>
       <SEO
-        title="About"
-        description="A children's story"
+        title="Home"
+        description="Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice..."
       />
       <div className="container">
         <Fade>
@@ -95,19 +95,22 @@ export default ({ data }) => {
 
       <Divider />
 
+      <a id="synopsis"></a>
       <div className="container">
         <Fade>
           <div className="section-synopsis d-horizontal">
-            <div className="deer-wrapper">
-              <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
-            </div>
-            <div className="textbox textbox-constrained">
-              <h2>Synopsis</h2>
-              <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
-              <h2 className="ta-center tilde">~</h2>
-              <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
-              </p>
-            </div>
+              <div className="deer-wrapper">
+                <img src={imgBabydeer} alt="baby deer with open mouth" className="responsive mw-600" id="title-image"/>
+              </div>
+              <div className="textbox textbox-constrained">
+                <h2>Synopsis</h2>
+                <p>Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice...</p>
+                <h2 className="ta-center tilde">~</h2>
+                <p>On the surface this book is a piece of propaganda to get children to eat their vegetables. More subtly, it encourages readers to question authority with their own observations. Importantly this story reminds us to laugh in life - which is why it's best read aloud, not alone.
+                </p>
+              </div>
+
+
           </div>
         </Fade>
       </div>

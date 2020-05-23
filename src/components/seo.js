@@ -23,6 +23,7 @@ const SEO = ({
   }) => {
 
   const { site } = useStaticQuery(query)
+  console.log(site.siteMetadata.image)
   const { pathname } = useLocation()
   const { langKey } = usePageContext()
 
@@ -33,7 +34,7 @@ const SEO = ({
   // 'link' and 'meta' defaults appear on every page. If defined in props, they are appended to defaults
   const defaults = {
     title: "A children's story",
-    titleTemplate: "%s | The Power of Vegetables",
+    titleTemplate: t.tt[langKey],
     description: `A children's book`,
     keywords: ['childrens book', 'picture book','kids','vegetables','humorous','toots','deer','animals','colors','reading'],
     lang: langKey,
@@ -48,19 +49,16 @@ const SEO = ({
         rel: "canonical",
         href: canonical || fullUrl,
       },
-      // {
-      //   rel: 'icon',
-      //   href: favicon,
-      // },
     ]
     // language alternate tags
     .concat(site.siteMetadata.supportedLangs.map(lng=> {
-      if (lng === 'en' && pathname.split('/').splice(2).join('/') === '') {
+      if (lng === 'en') {
+        console.log(`${baseUrl}/${pathname.split('/').splice(2).join('/')}`)
         return (
           {
             rel: 'alternate',
             hreflang: lng,
-            href: `${baseUrl}/`
+            href: `${baseUrl}/${pathname.split('/').splice(2).join('/')}`
           }
         )
       } else {
@@ -215,3 +213,11 @@ const query = graphql`
     }
   }
 `
+
+const t = {
+  tt: {
+    en: "%s | The Power of Vegetables",
+    fr: "%s | The Power of Vegetables",
+    ja: "%s ★ やさいのちから",
+  }
+}

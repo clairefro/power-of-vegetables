@@ -65,8 +65,8 @@ export default ({ pageContext: {langKey}, data }) => {
   return (
     <>
       <SEO
-        title="About"
-        description="A children's story"
+        title="ホーム"
+        description="主人公の子ジカくんは、土で汚れた野菜よりも、甘いピーカンパイが好き。そんな子ジカくんに何とか野菜を食べてもらおうと、お父さんジカは、野菜が身体にくれる魔法の力を教えます。"
       />
       <div className="container">
         <Fade>
@@ -101,6 +101,7 @@ export default ({ pageContext: {langKey}, data }) => {
 
       <Divider />
 
+      <a id="synopsis"></a>
       <div className="container">
         <Fade>
           <div className="section-synopsis d-horizontal">

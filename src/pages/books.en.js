@@ -28,6 +28,12 @@ export default () => (
         paperbackLink="#"
       />
       <BookCard
+        cover={imgEN}
+        lang="French"
+        kindleLink="#"
+        paperbackLink="#"
+      />
+      <BookCard
         cover={imgJA}
         lang="Japanese"
         kindleLink="#"

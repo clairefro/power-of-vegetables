@@ -28,7 +28,6 @@ export default () => (
         paperbackLink="#"
         renderLang='ja'
       />
-
       <BookCard
         cover={imgEN}
         lang="英語"
@@ -36,7 +35,12 @@ export default () => (
         paperbackLink="#"
         renderLang='ja'
       />
-
+      <BookCard
+        cover={imgEN}
+        lang="フランス語"
+        kindleLink="#"
+        paperbackLink="#"
+      />
 
     </div>
   </div>

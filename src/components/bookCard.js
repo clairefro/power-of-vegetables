@@ -45,5 +45,6 @@ const t = {
   paperback: {
     en: "Paperback",
     ja: "ペーパーバック",
+    fr: "livre de poche",
   }
 }

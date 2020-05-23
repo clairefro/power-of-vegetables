@@ -11,7 +11,7 @@ import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
 export default () => (
   <div className="page-books">
     <SEO
-      title="Buy"
+      title="購入"
       description="Available in Kindle and paperback formats. Expose your child the same fun story in several languages! Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice..."
     />
     <div className="container">

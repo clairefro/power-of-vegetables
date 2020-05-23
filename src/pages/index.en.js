@@ -64,8 +64,8 @@ export default ({ data }) => {
   return (
     <>
       <SEO
-        title="About"
-        description="A children's story"
+        title="Home"
+        description="Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice..."
       />
       <div className="container">
         <Fade>
@@ -94,7 +94,7 @@ export default ({ data }) => {
 
 
       <Divider />
-      
+
       <a id="synopsis"></a>
       <div className="container">
         <Fade>

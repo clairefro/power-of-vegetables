@@ -8,7 +8,7 @@ export default () => (
   <div className="page-contact">
     <SEO
       title="Contact"
-      description="Vous avez une question ou une critique de livre ? Contactez l'auteur de « The Power of Vegetables »."
+      description="Vous avez une question ou une critique de livre ? Contactez l'auteure de « The Power of Vegetables »."
     />
     <Fade>
       <div className="container">

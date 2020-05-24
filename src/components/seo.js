@@ -23,7 +23,6 @@ const SEO = ({
   }) => {
 
   const { site } = useStaticQuery(query)
-  console.log(site.siteMetadata.image)
   const { pathname } = useLocation()
   const { langKey } = usePageContext()
 

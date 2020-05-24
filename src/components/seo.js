@@ -36,7 +36,7 @@ const SEO = ({
     title: "A children's story",
     titleTemplate: t.tt[langKey],
     description: `A children's book`,
-    keywords: ['childrens book', 'picture book','kids','vegetables','humorous','toots','deer','animals','colors','reading'],
+    keywords: t.keywords[langKey],
     lang: langKey,
     meta: [
       {
@@ -219,5 +219,10 @@ const t = {
     en: "%s | The Power of Vegetables",
     fr: "%s | « Le pouvoir des légumes »",
     ja: "%s　〜　『やさいのちから』",
+  },
+  keywords: {
+    en: ['childrens book', 'picture book','kids','vegetables','humorous','toots','deer','animals','colors','reading'],
+    fr: ['livre pour enfants', `livre d'enfant`,'enfants','légumes','drôle','pets','chevreuils','cerf','animaux','couleurs','apprendre à lire'],
+    ja: ['絵本', '子ども','野菜','面白い','おなら','鹿','動物','色','読書'],
   }
 }

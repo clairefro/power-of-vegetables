@@ -7,6 +7,7 @@ import { Link } from '../components/link'
 // images
 import imgEN from '../../static/images/thumbs/thumb_en.jpg'
 import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
+import imgFR from '../../static/images/thumbs/thumb_fr.jpg'
 
 export default () => (
   <div className="page-books">
@@ -28,7 +29,7 @@ export default () => (
         paperbackLink="#"
       />
       <BookCard
-        cover={imgEN}
+        cover={imgFR}
         lang="French"
         kindleLink="#"
         paperbackLink="#"

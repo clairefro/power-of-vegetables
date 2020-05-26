@@ -141,7 +141,7 @@ export default ({ pageContext: {langKey}, data }) => {
 
           <Fade>
             <div className="d-horizontal">
-              <h3><span className="w">体の</span><span className="w">部分を</span><span className="w">学ぶ</span></h3>
+              <h3><span className="w">身体の</span><span className="w">部分を</span><span className="w">学ぶ</span></h3>
               <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>

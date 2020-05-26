@@ -86,7 +86,7 @@ const SEO = ({
     title: title || defaults.title,
     titleTemplate: titleTemplate || defaults.titleTemplate,
     description: description || defaults.description,
-    keywords: keywords || defaults.keywords,
+    keywords: keywords ? defaults.keywords.concat(keywords) : defaults.keywords,
     meta: meta ? defaults.meta.concat(meta) : defaults.meta,
     link: link ? defaults.link.concat(link) : defaults.link,
     lang: lang || defaults.lang,
@@ -220,8 +220,8 @@ const t = {
     ja: "%s　〜　『やさいのちから』",
   },
   keywords: {
-    en: ['childrens book', 'picture book','kids','vegetables','humorous','toots','deer','animals','colors','reading'],
-    fr: ['livre pour enfants', `livre d'enfant`,'enfants','légumes','drôle','pets','chevreuils','cerf','animaux','couleurs','apprendre à lire'],
-    ja: ['絵本', '子ども','野菜','面白い','おなら','鹿','動物','色','読書'],
+    en: ['The Power of Vegetables',"funny children's books","educational children's books","children's books",'picture books','Claire Froelich','Varvara Fomina','Miki Sugawara','kids','vegetables','great gifts for children','humorous','toots','deer','animals','colors','reading'],
+    fr: ['The Power of Vegetables','livres drôles pour enfants','livres amusants pour enfants','livres éducatifs pour enfants','cadeaux pour les enfants','livre pour enfants', `livre d'enfant`,'Claire Froelich','Varvara Fomina','Miki Sugawara','enfants','légumes','drôle','pets','chevreuils','cerf','animaux','couleurs','apprendre à lire'],
+    ja: ['The Power of Vegetables','やさいのちから','子供へのプレゼント','教育的な絵本','子供への贈り物','おもしろい絵本','Claire Froelich','Varvara Fomina','Miki Sugawara','絵本', '子ども','野菜','面白い','おなら','鹿','動物','色','読書','クレア・フレリク','バーバラ・フォミナ','菅原美樹',],
   }
 }

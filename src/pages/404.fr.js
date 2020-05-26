@@ -9,11 +9,11 @@ const NotFound = ({data}) => {
     <div className="page-not-found">
       <div className="container">
         <div className="text ta-center">
-          <h2>Ooops...</h2>
-          <p className="ta-center">Page not found</p>
+          <h2>Oups...</h2>
+          <p className="ta-center">Page non trouvée</p>
           <Img fluid={data.file.childImageSharp.fluid} style={{width: '60%', margin: '0 auto'}} />
-          <p className="ta-center">Maybe you want to go <Link to="/" className="link">Home</Link> instead?</p>
-          <p className="ta-center">Or <Link to="/books" className="link">buy the book</Link>!</p>
+          <p className="ta-center">Peut-être voulez-vous aller à <Link to="/" className="link">la page d'accueil</Link> ?</p>
+          <p className="ta-center">Ou peut-être voulez-vous <Link to="/books" className="link">acheter le livre</Link> ?</p>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import { Link } from '../components/link'
 import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
+import imgDaphne from '../../static/images/creators/daphne.jpg'
 
 // icons
 import iconInstagram from '../../static/icons/instagram.svg'
@@ -31,7 +32,7 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Claire Froelich</strong></h3>
             <p><strong>Auteure</strong></p>
-            <p>Inspirée par les pets comiques de son frère à la table du dîner. Également développeur web, elle a réalisé ce site.</p>
+            <p>Inspirée par les pets de son frère, qui égayaient les soupers familiaux. Également développeuse web, elle a réalisé ce site.</p>
             <p><Link to="contact" className="link">Contact</Link></p>
           </div>
         </div>
@@ -44,7 +45,7 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Varvara Fomina</strong></h3>
             <p><strong>Illustratrice</strong></p>
-            <p>Illustratrice freelance enthousiaste dont la passion est de se plonger dans les histoires des autres, qu'il s'agisse de chevreuils qui pètent ou de science nucléaire.</p>
+            <p>Illustratrice pigiste pleine d'enthousiasme, dont la passion est de plonger dans les histoires des autres, qu'il s'agisse de chevreuils qui pètent ou de science nucléaire.</p>
             <a href="https://www.instagram.com/barbara.fomina/" target="_blank" rel="noopener" className="link d-flex" style={{ alignItems: 'center'}}>
               <SVG src={iconInstagram}/>
               <span style={{marginLeft: '0.5rem'}}>barbara.fomina</span>
@@ -59,7 +60,19 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Miki Sugawara</strong></h3>
             <p><strong>Traductrice (japonais)</strong></p>
-            <p>Interprète et traductrice. Bien qu'elle puisse sembler diligente, elle ne manque jamais une occasion de rire.</p>
+            <p>Interprète et traductrice. Si elle a l'air d'une travailleuse acharnée, elle ne manque cependant jamais une occasion de rire.</p>
+          </div>
+        </div>
+
+        <div className="creator reverse">
+          <div className="creator-section-img">
+            <img src={imgDaphne} className="responsive" alt="Daphné B."/>
+            <p className="ta-center">photo par JF Lemire, Shoot Studio</p>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>Daphné B.</strong></h3>
+            <p><strong>Traductrice (français)</strong></p>
+            <p>Poète et traductrice littéraire, Daphné B. vit et travaille à Montréal.  Elle collabore régulièrement à l’émission de radio <a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit.</em></a></p>
           </div>
         </div>
       </Fade>

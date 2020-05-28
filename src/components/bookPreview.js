@@ -104,5 +104,6 @@ const t = {
   readmore: {
     en: "Read more!",
     ja: "もっと読む！",
+    fr: "En lire plus！",
   }
 }

@@ -9,6 +9,7 @@ import { Link } from '../components/link'
 import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
+import imgDaphne from '../../static/images/creators/daphne.jpg'
 
 // icons
 import iconInstagram from '../../static/icons/instagram.svg'
@@ -59,7 +60,19 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Miki Sugawara</strong></h3>
             <p><strong>Japanese Translator</strong></p>
-            <p>Interpreter and translator. While she may seem serious she never misses a laugh.</p>
+            <p>Interpreter and translator. While she may seem serious she never misses a chance for a laugh.</p>
+          </div>
+        </div>
+
+        <div className="creator reverse">
+          <div className="creator-section-img">
+            <img src={imgDaphne} className="responsive" alt="Daphné B."/>
+            <p className="ta-center">photo by JF Lemire, Shoot Studio</p>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>Daphné B.</strong></h3>
+            <p><strong>French Translator</strong></p>
+            <p>Daphne B. is a poet and literary translator based in Montreal. You can hear her talk about books on the radio show <a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit.</em></a></p>
           </div>
         </div>
       </Fade>

@@ -14,7 +14,7 @@ export default () => (
         <h2 className="ta-center">Politique de confidentialité</h2>
           <div className="text">
             <p style={{fontStyle: 'italic'}}>Dernière mise à jour : 22 mai 2020</p>
-            <p>Ce site web utilise des cookies et des services de données de tiers pour obtenir des informations marketing, entretenir les relations avec les clients et améliorer la fonctionnalité de ce site.</p>
+            <p>Ce site utilise des cookies et des services de données externes afin d'améliorer l'effort marketing, parfaire l'expérience de nos clients et optimiser nos services. </p>
             <p>En utilisant ce site, vous acceptez de partager vos données avec les services suivants.</p>
             <div className="overflow-x-container">
               <table>
@@ -34,13 +34,13 @@ export default () => (
                   <td>Données de tiers</td>
                   <td>Informer les abonnés des nouveautés et des coupons</td>
                   <td>Mailchimp</td>
-                  <td>Données collectées uniquement si l'e-mail est soumis dans le formulaire d'abonnement à la newsletter</td>
+                  <td>Données collectées uniquement si le courriel est soumis dans le formulaire d'abonnement à la lettre d'information</td>
                 </tr>
                 <tr>
                   <td>Données de tiers</td>
-                  <td>Allow users to contact the book author</td>
+                  <td>Permettre aux utilisateurs de contacter l'auteure du livre</td>
                   <td>Getform</td>
-                  <td>Data only collected if submitted in contact form</td>
+                  <td>Données collectées uniquement dans le formulaire de contact</td>
                 </tr>
               </table>
             </div>

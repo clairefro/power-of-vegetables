@@ -63,7 +63,7 @@ const t = {
   creators: {
     en: "About the Creators",
     ja: "クリエーターについて",
-    fr: "Les créateurs",
+    fr: "Créateurs",
   },
   privacy: {
     en: "Privacy Policy",
@@ -73,7 +73,7 @@ const t = {
   site: {
     en: "About this site",
     ja: "サイト情報",
-    fr: "Information du site",
+    fr: "À propos du site",
   },
   contact: {
     en: "Contact",

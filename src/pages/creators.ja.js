@@ -9,6 +9,7 @@ import { Link } from '../components/link'
 import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
+import imgDaphne from '../../static/images/creators/daphne.jpg'
 
 // icons
 import iconInstagram from '../../static/icons/instagram.svg'
@@ -19,13 +20,13 @@ export default () => (
       title="クリエーター"
       description="『やさいのちから』作者：クレア・フレリク。イラスト：バーバラ・フォミナ。"
     />
-    <Fade>
-      <div className="container">
+    <div className="container">
+      <Fade>
         <h2 className="ta-center">クリエーター</h2>
 
         <div className="creator">
           <div className="creator-section-img">
-            <img src={imgClaire} className="responsive" alt="Claire Froelich"/>
+            <img src={imgClaire} className="responsive" alt="Claire Froelich　クレア・フレリク"/>
             <p className="ta-center">出典　アナスタシア・マヤムシナ</p>
           </div>
           <div className="creator-section-text">
@@ -36,10 +37,9 @@ export default () => (
           </div>
         </div>
 
-
         <div className="creator reverse">
           <div className="creator-section-img">
-            <img src={imgVarvara} className="responsive" alt="Varvara Fomina"/>
+            <img src={imgVarvara} className="responsive" alt="Varvara Fomina　バーバラ・フォミナ"/>
           </div>
           <div className="creator-section-text">
             <h3><strong>バーバラ・フォミナ</strong></h3>
@@ -54,7 +54,7 @@ export default () => (
 
         <div className="creator">
           <div className="creator-section-img">
-            <img src={imgSuga} className="responsive" alt="Miki Sugawara"/>
+            <img src={imgSuga} className="responsive" alt="Miki Sugawara　菅原美樹"/>
           </div>
           <div className="creator-section-text">
             <h3><strong>菅原　美樹</strong></h3>
@@ -63,7 +63,18 @@ export default () => (
           </div>
         </div>
 
-      </div>
-    </Fade>
+        <div className="creator reverse">
+          <div className="creator-section-img">
+            <img src={imgDaphne} className="responsive" alt="Daphné B.　ダフネ・B"/>
+            <p className="ta-center">photo par JF Lemire, Shoot Studio</p>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>ダフネ・B</strong></h3>
+            <p><strong>翻訳者（フランス語）</strong></p>
+            <p>詩人、文学翻訳家であり、モントリオールを拠点に活動。ラジオ番組『<a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit</em></a>』のレギュラーコントリビューターでもある。</p>
+          </div>
+        </div>
+      </Fade>
+    </div>
   </div>
 )

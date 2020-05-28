@@ -75,7 +75,7 @@ MailchimpSubscribeForm.propTypes = {
 const t = {
   title: {
     en: "Get updates & coupons",
-    fr: "Restez connecté avec nous",
+    fr: "Connectez-vous pour connaître nos mises à jour",
     ja: "ニュースやお得な情報を購読する",
   },
   placeholder: {

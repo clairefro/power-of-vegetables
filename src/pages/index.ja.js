@@ -141,7 +141,7 @@ export default ({ pageContext: {langKey}, data }) => {
 
           <Fade>
             <div className="d-horizontal">
-              <h3><span className="w">体の</span><span className="w">部分を</span><span className="w">学ぶ</span></h3>
+              <h3><span className="w">身体の</span><span className="w">部分を</span><span className="w">学ぶ</span></h3>
               <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>
@@ -162,8 +162,12 @@ export default ({ pageContext: {langKey}, data }) => {
             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden" className="responsive mw-600"/>
             <h2>レビュー</h2>
             <div className="review">
-              <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
-              <p className="review-author">- ケンドラ‐・ベーカー、 お母さん</p>
+              <span className="review-text">息子は物語のエンディングに<span className="w"><strong>笑いすぎてしまった。。。</strong></span></span>
+              <p className="review-author">- ケンドラー・B、　母親</p>
+            </div>
+            <div className="review">
+              <span className="review-text">やっと、<strong>子供と同じくらい笑わせてくれた</strong>絵本が見つけた</span>
+              <p className="review-author">- ファーハン・D、　双子の父親</p>
             </div>
           </div>
         </Fade>

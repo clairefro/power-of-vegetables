@@ -14,8 +14,8 @@ export default () => (
       <div className="container">
         <div className="title-box">
           <h2 className="ta-center">Contact</h2>
-          <p>Vous avez une question ou une critique de livre ?</p>
-          <p>Contactez l'auteure à partir du formulaire ci-dessous.</p>
+          <p>Vous avez une question ou un commentaire ?</p>
+          <p>Contactez l'auteure en remplissant le formulaire ci-dessous.</p>
         </div>
         <ContactForm />
       </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Fade from 'react-reveal/Fade'
 import Img from "gatsby-image/withIEPolyfill"
 
 import { Link } from '../components/link'

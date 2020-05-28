@@ -85,7 +85,7 @@ export default ({ data }) => {
                 className="btn large fr"
                 onClick={() => fart.play()}
               >
-                Lisez maintenant
+                Lire
               </Link>
             </div>
           </div>
@@ -103,9 +103,9 @@ export default ({ data }) => {
               </div>
               <div className="textbox textbox-constrained">
                 <h2>Synopsis</h2>
-                <p>Bébé chevreuil préfère les tartes aux noix de pécan sucrées aux légumes sales - jusqu'à ce que Papa chevreuil nous apprenne les pouvoirs magiques que ces légumes nous donnent. Mais toutes les vérités ne se révèlent pas sous forme de conseils...</p>
+                <p>Bébé chevreuil préfère les tartes aux pacanes sucrées aux légumes encrassés de terre — jusqu’à ce que papa chevreuil lui enseigne les pouvoirs magiques que ces légumes confèrent. La vérité éclate enfin, et pas juste de la bouche de papa chevreuil.</p>
                 <h2 className="ta-center tilde">~</h2>
-                <p>En surface, ce livre est un morceau de propagande pour amener les enfants à manger leurs légumes. Plus subtilement, il encourage les lecteurs à remettre en question l'autorité par leurs propres observations. Plus important encore, cette histoire nous rappelle qu'il faut rire dans la vie - c'est pourquoi il vaut mieux la lire à voix haute, et non seule.
+                <p>À première vue, ce livre se présente comme un outil de propagande pour amener les enfants à manger leurs légumes. De manière plus subtile, il encourage les lecteurs à remettre en question l’autorité et à émettre leurs propres observations. Plus important encore, cette histoire nous rappelle qu’il est essentiel de rire dans la vie — c’est pourquoi il vaut mieux la lire à voix haute, avec quelqu’un d’autre.
                 </p>
               </div>
           </div>
@@ -117,7 +117,7 @@ export default ({ data }) => {
       <div className="container">
         <Fade>
           <div className="section-look-inside">
-            <h2 className="ta-center">Regardez à l'intérieur</h2>
+            <h2 className="ta-center">Feuilleter ce livre</h2>
             <BookPreview pages={pages}/>
           </div>
         </Fade>
@@ -128,20 +128,20 @@ export default ({ data }) => {
       <div className="container">
         <div className="section-features">
           <Fade>
-            <h3 className="ta-center">Apprenez les couleurs avec les légumes</h3>
+            <h3 className="ta-center">Apprendre les couleurs avec les légumes</h3>
             <ImageCarousel images={veggieRainbow}/>
           </Fade>
 
           <Fade>
             <div className="d-horizontal">
-              <h3>Apprenez les parties du corps</h3>
+              <h3>Apprendre les parties du corps</h3>
               <img src={imgBabydeerHead} className="responsive mw-600" alt="Baby deer looking at a butterly, which is seen reflected in his eye"/>
             </div>
           </Fade>
           <Fade>
             <div className="d-horizontal reverse">
               <img src={imgRabbitToot} className="responsive mw-600" alt="Shocked rabbit tooting a rainbow while pausing eating a carrot"/>
-              <h3>Riez ensemble</h3>
+              <h3>Rire ensemble</h3>
             </div>
           </Fade>
         </div>
@@ -152,10 +152,14 @@ export default ({ data }) => {
         <Fade>
           <div className="section-reviews">
             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden" className="responsive mw-600"/>
-            <h2>Commentaires</h2>
+            <h2 className="fr">Commentaires</h2>
             <div className="review">
-              <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
-              <p className="review-author">- Kendra Baker, mother of toddler</p>
+              <span className="review-text">Mon fils <strong>a trop aimé</strong> la fin...</span>
+              <p className="review-author">- Kendra B., mère</p>
+            </div>
+            <div className="review">
+              <span className="review-text">Finally, a children's book where <strong>I laughed as loud as my kids did</strong>.</span>
+              <p className="review-author">- Farhan D.,  père de jumeaux</p>
             </div>
           </div>
         </Fade>

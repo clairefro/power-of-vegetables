@@ -7,6 +7,7 @@ import { Link } from '../components/link'
 // images
 import imgEN from '../../static/images/thumbs/thumb_en.jpg'
 import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
+import imgFR from '../../static/images/thumbs/thumb_fr.jpg'
 
 export default () => (
   <div className="page-books">
@@ -16,14 +17,14 @@ export default () => (
     />
     <div className="container">
       <div className="title-box">
-        <h2 className="ta-center">Achetez le livre </h2>
-        <p className="ta-center">Disponible en format Kindle et livre de poche.</p>
+        <h2 className="ta-center">Acheter le livre</h2>
+        <p className="ta-center">Disponible en format Kindle et en livre de poche.</p>
         <p>Lisez la même histoire amusante à votre enfant en plusieurs langues !</p>
         <Link to="/#synopsis" className="link">À propos du livre</Link>
       </div>
 
       <BookCard
-        cover={imgEN}
+        cover={imgFR}
         lang="français"
         renderLang="fr"
         kindleLink="#"

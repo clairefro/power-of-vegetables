@@ -158,8 +158,12 @@ export default ({ data }) => {
             <img src={imgPapadeer} alt="Papa deer admiring his vegetable garden" className="responsive mw-600"/>
             <h2>Reviews</h2>
             <div className="review">
-              <span className="review-text">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipiscing elit </span>
-              <p className="review-author">- Kendra Baker, mother of toddler</p>
+              <span className="review-text">My son <strong>enjoyed the ending</strong> almost too much...  </span>
+              <p className="review-author">- Kendra B., mother of toddler</p>
+            </div>
+            <div className="review">
+              <span className="review-text">Finally, a children's book where <strong>I laughed as loud as my kids did</strong>.</span>
+              <p className="review-author">- Farhan D., father of twins</p>
             </div>
           </div>
         </Fade>

@@ -27,12 +27,12 @@ const t = {
   name: {
     en: "Name",
     ja: "お名前",
-    fr: "Votre nom",
+    fr: "Nom",
   },
   email: {
     en: "Email",
     ja: "メールアドレス",
-    fr: "Email",
+    fr: "Courriel",
   },
   message: {
     en: "Message",

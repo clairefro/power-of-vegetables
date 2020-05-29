@@ -21,17 +21,16 @@ export default () => (
         <p className="ta-center">Available in Kindle and paperback formats. Read the same fun story to your child in several languages!</p>
         <Link to="/#synopsis" className="link">About the book</Link>
       </div>
-
       <BookCard
         cover={imgEN}
         lang="English"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKEN"
         paperbackLink="#"
       />
       <BookCard
         cover={imgFR}
         lang="French"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKFR"
         paperbackLink="#"
       />
       <BookCard

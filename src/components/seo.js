@@ -215,9 +215,9 @@ const query = graphql`
 
 const t = {
   tt: {
-    en: "%s | The Power of Vegetables",
-    fr: "%s | « Le pouvoir des légumes »",
-    ja: "%s　〜　『やさいのちから』",
+    en: "%s | The Power of Vegetables, a children's book",
+    fr: "%s | « Le pouvoir des légumes », un livre pour enfants",
+    ja: "%s　〜　『やさいのちから』　〜　子ども向けの絵本",
   },
   keywords: {
     en: ['The Power of Vegetables',"funny children's books","educational children's books","children's books","kids books",'picture books','Claire Froelich','Varvara Fomina','Miki Sugawara','kids','vegetables','great gifts for children','humorous','toots','deer','animals','colors','reading'],

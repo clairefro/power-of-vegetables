@@ -27,14 +27,14 @@ export default () => (
         cover={imgFR}
         lang="français"
         renderLang="fr"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKFR"
         paperbackLink="#"
       />
       <BookCard
         cover={imgEN}
         lang="anglais"
         renderLang="fr"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKEN"
         paperbackLink="#"
       />
       <BookCard

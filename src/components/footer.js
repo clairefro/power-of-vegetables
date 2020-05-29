@@ -1,4 +1,6 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
 import { Link } from './link'
 import MailchimpSubscribeForm from './mailchimpSubscribeForm'
@@ -12,8 +14,24 @@ import { usePageContext } from '../context/pageContext'
 
 const Footer = () =>　{
   const { langKey: currentLang } = usePageContext()
+  const data = useStaticQuery(graphql`
+    query footerBackground {
+      file(relativePath: { eq: "accents/footer.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 2000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  const bgImgData = data.file.childImageSharp.fluid
+
   return (
-    <div className="footer" style={{ backgroundImage: `url('${imgBackground}')`}}>
+    <BackgroundImage
+      className="footer"
+      fluid={bgImgData}>
       <div className="footer-content">
 
         <div className="footer-columns">
@@ -43,7 +61,7 @@ const Footer = () =>　{
         </div>
 
       </div>
-    </div>
+    </BackgroundImage>
   )
 }　
 

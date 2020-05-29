@@ -28,21 +28,20 @@ export default () => (
         lang="français"
         renderLang="fr"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
-        paperbackLink="#"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
       />
       <BookCard
         cover={imgEN}
         lang="anglais"
         renderLang="fr"
         kindleLink="https://mybook.to/PowerOfVegetablesKEN"
-        paperbackLink="#"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPEN"
       />
       <BookCard
         cover={imgJA}
         lang="japonais"
         renderLang="fr"
         kindleLink="#"
-        paperbackLink="#"
       />
 
     </div>

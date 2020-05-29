@@ -13,7 +13,7 @@ export default () => (
   <div className="page-books">
     <SEO
       title="購入"
-      description="Available in Kindle and paperback formats. Expose your child the same fun story in several languages! Baby deer prefers sweet pecan pie over dirty vegetables -  until Papa deer teaches the magical powers these veggies give us. But not all truths reveal themselves in the form of advice..."
+      description="Kindleおよびペーパーバック形式で販売中。子供に同じ楽しい話をいくつかの言語で読んでみましょう！主人公の子ジカくんは、土で汚れた野菜よりも、甘いピーカンパイが好き。そんな子ジカくんに何とか野菜を食べてもらおうと、お父さんジカは、野菜が身体にくれる魔法の力を教えます。 しかし、真実は、必ずしも望んだとおりの形で明らかになるわけではないようです。。。"
     />
     <div className="container">
       <div className="title-box">
@@ -26,22 +26,22 @@ export default () => (
         cover={imgJA}
         lang="日本語"
         kindleLink="#"
-        paperbackLink="#"
         renderLang='ja'
       />
       <BookCard
         cover={imgEN}
         lang="英語"
-        kindleLink="#"
-        paperbackLink="https://mybook.to/PowerOfVegetablesKEN"
+        kindleLink="https://mybook.to/PowerOfVegetablesKEN"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPEN"
         renderLang='ja'
       />
       <BookCard
         cover={imgFR}
         lang="フランス語"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
-        paperbackLink="#"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
       />
+      <p></p>
 
     </div>
   </div>

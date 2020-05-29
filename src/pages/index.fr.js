@@ -158,7 +158,7 @@ export default ({ data }) => {
               <p className="review-author">- Kendra B., mère</p>
             </div>
             <div className="review">
-              <span className="review-text">Finally, a children's book where <strong>I laughed as loud as my kids did</strong>.</span>
+              <span className="review-text">Enfin, un livre pour enfants qui <strong>m'a fait rire aussi fort que mes enfants</strong>.</span>
               <p className="review-author">- Farhan D.,  père de jumeaux</p>
             </div>
           </div>

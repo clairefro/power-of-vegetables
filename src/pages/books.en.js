@@ -25,19 +25,19 @@ export default () => (
         cover={imgEN}
         lang="English"
         kindleLink="https://mybook.to/PowerOfVegetablesKEN"
-        paperbackLink="#"
+        paperbackLink="https://mybook.to/PowerOfVegetablesKEN"
       />
       <BookCard
         cover={imgFR}
         lang="French"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
-        paperbackLink="#"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
       />
       <BookCard
         cover={imgJA}
         lang="Japanese"
         kindleLink="#"
-        paperbackLink="#"
+        
       />
 
     </div>

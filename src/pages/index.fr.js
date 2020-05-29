@@ -28,12 +28,12 @@ import imgRabbitToot from '../../static/images/animals/toot.png'
 import imgPapadeer from '../../static/images/animals/papa.png'
 
 // preview pages
-import page1 from '../../static/images/book-pages/en/page-1.jpg'
-import page2 from '../../static/images/book-pages/en/page-2.jpg'
-import page3 from '../../static/images/book-pages/en/page-3.jpg'
-import page4 from '../../static/images/book-pages/en/page-4.jpg'
-import page5 from '../../static/images/book-pages/en/page-5.jpg'
-import page6 from '../../static/images/book-pages/en/page-6.jpg'
+import page1 from '../../static/images/book-pages/fr/page-1.jpg'
+import page2 from '../../static/images/book-pages/fr/page-2.jpg'
+import page3 from '../../static/images/book-pages/fr/page-3.jpg'
+import page4 from '../../static/images/book-pages/fr/page-4.jpg'
+import page5 from '../../static/images/book-pages/fr/page-5.jpg'
+import page6 from '../../static/images/book-pages/fr/page-6.jpg'
 
 // Array-ify
 const veggieRainbow = [

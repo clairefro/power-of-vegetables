@@ -3,13 +3,14 @@ import React from 'react'
 import SEO from '../components/seo'
 import BookCard from '../components/bookCard'
 import { Link } from '../components/link'
+import CommingSoon from '../components/commingSoon'
 
 // images
 import imgEN from '../../static/images/thumbs/thumb_en.jpg'
 import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
 import imgFR from '../../static/images/thumbs/thumb_fr.jpg'
 
-export default () => (
+export default ({ pageContext: { langKey } }) => (
   <div className="page-books">
     <SEO
       title="Achetez"
@@ -43,6 +44,8 @@ export default () => (
         renderLang="fr"
         kindleLink="#"
       />
+
+      <CommingSoon lang={langKey}/>
 
     </div>
   </div>

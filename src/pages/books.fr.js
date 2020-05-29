@@ -42,7 +42,7 @@ export default ({ pageContext: { langKey } }) => (
         cover={imgJA}
         lang="japonais"
         renderLang="fr"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKJP"
       />
 
       <CommingSoon lang={langKey}/>

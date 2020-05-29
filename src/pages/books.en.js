@@ -37,7 +37,7 @@ export default ({ pageContext: { langKey } }) => (
       <BookCard
         cover={imgJA}
         lang="Japanese"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKJP"
       />
 
       <CommingSoon lang={langKey}/>

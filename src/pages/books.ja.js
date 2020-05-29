@@ -26,7 +26,7 @@ export default ({ pageContext: { langKey } }) => (
       <BookCard
         cover={imgJA}
         lang="日本語"
-        kindleLink="#"
+        kindleLink="https://mybook.to/PowerOfVegetablesKJP"
         renderLang='ja'
       />
       <BookCard

@@ -10,6 +10,7 @@ import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
 import imgDaphne from '../../static/images/creators/daphne.jpg'
+import imgNatalia from '../../static/images/creators/natalia.jpg'
 
 // icons
 import iconInstagram from '../../static/icons/instagram.svg'
@@ -66,12 +67,23 @@ export default () => (
         <div className="creator reverse">
           <div className="creator-section-img">
             <img src={imgDaphne} className="responsive" alt="Daphné B.　ダフネ・B"/>
-            <p className="ta-center">photo par JF Lemire, Shoot Studio</p>
+            <p className="ta-center">出典 JF Lemire, Shoot Studio</p>
           </div>
           <div className="creator-section-text">
             <h3><strong>ダフネ・B</strong></h3>
             <p><strong>翻訳者（フランス語）</strong></p>
             <p>詩人、文学翻訳家であり、モントリオールを拠点に活動。ラジオ番組『<a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit</em></a>』のレギュラーコントリビューターでもある。</p>
+          </div>
+        </div>
+
+        <div className="creator">
+          <div className="creator-section-img">
+            <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>ナタリア・サニン</strong></h3>
+            <p><strong>翻訳者（スペイン語）</strong></p>
+            <p>動物が大好き（そのオナラを含めて）。自由時間の多くを詩や短編小説の読書と執筆に費やしている。</p>
           </div>
         </div>
       </Fade>

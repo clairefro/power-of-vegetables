@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
+import SVG from 'react-inlinesvg'
 
 import { Link } from './link'
 import MailchimpSubscribeForm from './mailchimpSubscribeForm'
@@ -11,6 +12,9 @@ import imgBackground from '../../static/images/accents/footer.png'
 
 // context
 import { usePageContext } from '../context/pageContext'
+
+// iconInstagram
+import iconInstagram from '../../static/icons/instagram.svg'
 
 const Footer = () =>　{
   const { langKey: currentLang } = usePageContext()
@@ -47,18 +51,34 @@ const Footer = () =>　{
           </div>
           <div className="footer-column footer-col-3">
             <LanguagePicker />
+            <div className="socials">
+              <a href="https://www.instagram.com/powerofvegetables/" target="_blank" rel="noopener noreferrer">
+                <SVG src={iconInstagram} />
+              </a>
+            </div>
           </div>
         </div>
+
+
+
         <MailchimpSubscribeForm />
 
 
         <div className="mobile-footer mobile-only">
           <LanguagePicker />
+          <div className="socials">
+            <a href="https://www.instagram.com/powerofvegetables/" target="_blank" rel="noopener noreferrer">
+              <SVG src={iconInstagram} />
+            </a>
+          </div>
         </div>
+
+
 
         <div className="footer-copyright">
           <p>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
+
 
       </div>
     </BackgroundImage>

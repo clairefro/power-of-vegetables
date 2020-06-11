@@ -10,6 +10,7 @@ import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
 import imgDaphne from '../../static/images/creators/daphne.jpg'
+import imgNatalia from '../../static/images/creators/natalia.jpg'
 
 // icons
 import iconInstagram from '../../static/icons/instagram.svg'
@@ -73,6 +74,17 @@ export default () => (
             <h3><strong>Daphné B.</strong></h3>
             <p><strong>French Translator</strong></p>
             <p>Daphne B. is a poet and literary translator based in Montreal. You can hear her talk about books on the radio show <a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit.</em></a></p>
+          </div>
+        </div>
+
+        <div className="creator">
+          <div className="creator-section-img">
+            <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>Natalia Sanín</strong></h3>
+            <p><strong>Spanish Translator</strong></p>
+            <p>She loves animals, including their toots. Spends a lot of her free time reading and writing poetry and short stories.</p>
           </div>
         </div>
       </Fade>

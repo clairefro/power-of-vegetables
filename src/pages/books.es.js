@@ -24,21 +24,21 @@ export default ({ pageContext: { langKey } }) => (
       </div>
       <BookCard
         cover={imgEN}
-        lang="English"
+        lang="inglés"
         kindleLink="https://mybook.to/PowerOfVegetablesKEN"
         paperbackLink="https://mybook.to/PowerOfVegetablesKEN"
         renderLang='es'
       />
       <BookCard
         cover={imgFR}
-        lang="French"
+        lang="francés"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
         paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
         renderLang='es'
       />
       <BookCard
         cover={imgJA}
-        lang="Japanese"
+        lang="japonés"
         kindleLink="https://mybook.to/PowerOfVegetablesKJP"
         renderLang='es'
       />

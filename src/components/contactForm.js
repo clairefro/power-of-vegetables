@@ -28,20 +28,24 @@ const t = {
     en: "Name",
     ja: "お名前",
     fr: "Nom",
+    es: "Nombre",
   },
   email: {
     en: "Email",
     ja: "メールアドレス",
     fr: "Courriel",
+    es: "Correo electrónico",
   },
   message: {
     en: "Message",
     ja: "メッセージ",
     fr: "Message",
+    es: "Mensaje",
   },
   send: {
     en: "Send",
     ja: "送信",
     fr: "Envoyer",
+    es: "Enviar",
   }
 }

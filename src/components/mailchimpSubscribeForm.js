@@ -38,7 +38,7 @@ const MailchimpSubscribeForm = () => {
             type="email"
             value={params.EMAIL}
             onChange={handleFieldChange}
-            placeholder="you@email.com"
+            placeholder={t.placeholder[langKey]}
             required
           />
           <div className={`mailchimp-response`}>
@@ -77,13 +77,13 @@ const t = {
     en: "Get updates & coupons",
     fr: "Connectez-vous pour connaître nos mises à jour",
     ja: "ニュースやお得な情報を購読する",
-    es: "Suscríbete para obtener actualizaciones y cupones",
+    es: "Boletín de noticias y cupones",
   },
   placeholder: {
     en: "you@email.com",
     fr: "vous@email.com",
     ja: "you@email.com",
-    es: "yo@email.com",
+    es: "tu@email.com",
   },
   loading: {
     en: "Sending...",

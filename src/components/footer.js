@@ -116,7 +116,7 @@ const t = {
     en: "About this site",
     ja: "サイト情報",
     fr: "À propos du site",
-    es: "À propos du site",
+    es: "Acerca de este sitio",
   },
   contact: {
     en: "Contact",

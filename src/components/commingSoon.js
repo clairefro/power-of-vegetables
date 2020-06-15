@@ -11,5 +11,6 @@ const t ={
     en:'Coming soon in Portuguese, Russian, German, and Spanish!',
     fr:'Bientôt disponible en portugais, russe, allemand, et espagnol !',
     ja:'近日中にリリース予定 ： ポルトガル語、ロシア語、ドイツ語、スペイン語',
+    es:'¡Pronto estará disponible en portugués, ruso, alemán y español!',
   }
 }

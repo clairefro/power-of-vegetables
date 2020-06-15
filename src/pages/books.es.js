@@ -27,17 +27,20 @@ export default ({ pageContext: { langKey } }) => (
         lang="English"
         kindleLink="https://mybook.to/PowerOfVegetablesKEN"
         paperbackLink="https://mybook.to/PowerOfVegetablesKEN"
+        renderLang='es'
       />
       <BookCard
         cover={imgFR}
         lang="French"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
         paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
+        renderLang='es'
       />
       <BookCard
         cover={imgJA}
         lang="Japanese"
         kindleLink="https://mybook.to/PowerOfVegetablesKJP"
+        renderLang='es'
       />
 
       <CommingSoon lang={langKey}/>

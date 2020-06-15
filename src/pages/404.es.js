@@ -12,8 +12,8 @@ const NotFound = ({data}) => {
           <h2>Ooops...</h2>
           <p className="ta-center">Página no encontrada</p>
           <Img fluid={data.file.childImageSharp.fluid} style={{width: '60%', margin: '0 auto'}} />
-          <p className="ta-center">¿Quizás quieras ir a la página de <Link to="/" className="link">Home</Link> en su lugar?</p>
-          <p className="ta-center">O puedes <Link to="/books" className="link">comprar el libro</Link>!</p>
+          <p className="ta-center">¿Quizás quieras ir a la página <Link to="/" className="link">Home</Link> en su lugar?</p>
+          <p className="ta-center">O quizás quieras <Link to="/books" className="link">comprar el libro</Link>!</p>
         </div>
       </div>
     </div>

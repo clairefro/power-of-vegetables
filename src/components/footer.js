@@ -92,30 +92,36 @@ const t = {
     en: "Home",
     ja: "ホーム",
     fr: "Accueil",
+    es: "Home",
   },
   buy: {
     en: "Buy the book",
     ja: "絵本を買う",
     fr: "Achetez le livre",
+    es: "Compra el libro",
   },
   creators: {
     en: "About the Creators",
     ja: "クリエーターについて",
     fr: "Créateurs",
+    es: "Creadores",
   },
   privacy: {
     en: "Privacy Policy",
     ja: "プライバシー ポリシー",
     fr: "Politique de confidentialité",
+    es: "Política de privacidad",
   },
   site: {
     en: "About this site",
     ja: "サイト情報",
     fr: "À propos du site",
+    es: "À propos du site",
   },
   contact: {
     en: "Contact",
     ja: "お問い合わせ",
     fr: "Contact",
+    es: "Contacto",
   }
 }

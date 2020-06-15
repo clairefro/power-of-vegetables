@@ -31,7 +31,7 @@ export default () => (
             <p className="ta-center">出典　アナスタシア・マヤムシナ</p>
           </div>
           <div className="creator-section-text">
-            <h3><strong>クレア・フレリク</strong></h3>
+            <h3><strong>クレア・<span className="w">フレリク</span></strong></h3>
             <p><strong>著者</strong></p>
             <p>「笑いは最高の薬」がセリフ。ウェブディベロッパーでもあり、このサイトを作った。</p>
             <p><Link to="contact" className="link">お問い合わせはこちら</Link></p>
@@ -43,7 +43,7 @@ export default () => (
             <img src={imgVarvara} className="responsive" alt="Varvara Fomina　バーバラ・フォミナ"/>
           </div>
           <div className="creator-section-text">
-            <h3><strong>バーバラ・フォミナ</strong></h3>
+            <h3><strong>バーバラ・<span className="w">フォミナ</span></strong></h3>
             <p><strong>イラストレーター</strong></p>
             <p>現在、フリーランスのイラストレーターとして活動。バーバラ・フォミナのイラスト制作に注ぐ情熱は、言葉では言いつくせない。テーマを問わず、物語がさらに生き生きとするようなイラストを描き続けている。</p>
             <a href="https://www.instagram.com/barbara.fomina/" target="_blank" rel="noopener" className="link d-flex" style={{ alignItems: 'center'}}>
@@ -81,7 +81,7 @@ export default () => (
             <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
           </div>
           <div className="creator-section-text">
-            <h3><strong>ナタリア・サニン</strong></h3>
+            <h3><strong>ナタリア・<span className="w">サニン</span></strong></h3>
             <p><strong>翻訳者（スペイン語）</strong></p>
             <p>動物が大好き（そのオナラを含めて）。自由時間の多くを詩や短編小説の読書と執筆に費やしている。</p>
           </div>

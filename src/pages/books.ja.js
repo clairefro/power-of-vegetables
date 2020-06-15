@@ -41,6 +41,7 @@ export default ({ pageContext: { langKey } }) => (
         lang="フランス語"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
         paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
+        renderLang='ja'
       />
 
       <CommingSoon lang={langKey} />

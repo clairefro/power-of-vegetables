@@ -138,6 +138,7 @@
           fill: $yellow-light;
           height: 30px;
           width: 30px;
+          align-self: center;
         }
       }
       .mobile-footer {
@@ -150,7 +151,8 @@
         line-height: 40px;
         text-align: center;
         a {
-          display:block;
+          display:flex;
+          width: 30px;
           transition: 0.3s;
           font-size: 18px;
           &:hover {

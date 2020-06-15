@@ -98,10 +98,12 @@ const t = {
     en: "Creators",
     ja: "クリエーター",
     fr: "Créateurs",
+    es: "Creadores",
   },
   buy: {
     en: "Buy now",
     ja: "購入",
     fr: "Achetez",
+    es: "Cómpralo",
   }
 }

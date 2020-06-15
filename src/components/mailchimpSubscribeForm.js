@@ -38,7 +38,7 @@ const MailchimpSubscribeForm = () => {
             type="email"
             value={params.EMAIL}
             onChange={handleFieldChange}
-            placeholder="you@email.com"
+            placeholder={t.placeholder[langKey]}
             required
           />
           <div className={`mailchimp-response`}>
@@ -69,7 +69,7 @@ MailchimpSubscribeForm.defaultProps = {
 }
 
 MailchimpSubscribeForm.propTypes = {
-  lang: PropTypes.oneOf(['en','ja','fr']).isRequired,
+  lang: PropTypes.oneOf(['en','ja','fr','es']).isRequired,
 }
 
 const t = {
@@ -77,30 +77,36 @@ const t = {
     en: "Get updates & coupons",
     fr: "Connectez-vous pour connaître nos mises à jour",
     ja: "ニュースやお得な情報を購読する",
+    es: "Boletín de noticias y cupones",
   },
   placeholder: {
     en: "you@email.com",
     fr: "vous@email.com",
     ja: "you@email.com",
+    es: "tu@email.com",
   },
   loading: {
     en: "Sending...",
     fr: "Envoi en cours...",
     ja: "送信中...",
+    es: "Espera un momento...",
   },
   error: {
     en: "Error: invalid email or already subscribed",
     fr: "Erreur: email invalide ou déjà abonné",
     ja: "エラー：無効なメールアドレス、またはすでに登録済み",
+    es: "Error: correo electrónico inválido o ya suscrito",
   },
   success: {
     en: "Almost there! Click the link sent to your email to confirm.",
     fr: "Merci! Vérifiez votre e-mail pour confirmer.",
     ja: "あともうちょい！メールを確認し、指示に従ってください。",
+    es: "¡Ya casi está! Haga clic en el enlace enviado a su correo electrónico para confirmar.",
   },
   subscribe: {
     en: "Subscribe",
     fr: "Abonnez-vous",
-    ja: "購読する"
+    ja: "購読する",
+    es: "Suscríbete",
   }
 }

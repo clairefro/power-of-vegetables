@@ -43,6 +43,9 @@
 @media only screen and (max-width: $Tablets) {
   .mailchimp-subscribe-form {
     flex-direction: column;
+    p {
+      text-align: center;
+    }
   }
 }
 

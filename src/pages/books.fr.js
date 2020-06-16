@@ -9,6 +9,7 @@ import CommingSoon from '../components/commingSoon'
 import imgEN from '../../static/images/thumbs/thumb_en.jpg'
 import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
 import imgFR from '../../static/images/thumbs/thumb_fr.jpg'
+import imgES from '../../static/images/thumbs/thumb_es.jpg'
 
 export default ({ pageContext: { langKey } }) => (
   <div className="page-books">
@@ -37,6 +38,13 @@ export default ({ pageContext: { langKey } }) => (
         renderLang="fr"
         kindleLink="https://mybook.to/PowerOfVegetablesKEN"
         paperbackLink="https://mybook.to/PowerOfVegetablesPEN"
+      />
+      <BookCard
+        cover={imgES}
+        lang="espagnol"
+        kindleLink="https://mybook.to/PowerOfVegetablesKES"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPES"
+        renderLang='fr'
       />
       <BookCard
         cover={imgJA}

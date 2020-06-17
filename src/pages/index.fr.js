@@ -162,6 +162,15 @@ export default ({ data }) => {
               <p className="review-author">- Farhan D.,  père de jumeaux</p>
             </div>
           </div>
+
+          <div className="d-flex jc-center">
+            <Link to="/books"
+              className="btn large"
+            >
+              Lire maintenant!
+            </Link>
+          </div>
+
         </Fade>
       </div>
     </>

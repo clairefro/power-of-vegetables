@@ -170,6 +170,15 @@ export default ({ pageContext: {langKey}, data }) => {
               <p className="review-author">- ファーハン・D、　双子の父親</p>
             </div>
           </div>
+
+          <div className="d-flex jc-center">
+            <Link to="/books"
+              className="btn large"
+            >
+              今すぐ読む
+            </Link>
+          </div>
+
         </Fade>
       </div>
     </>

@@ -169,7 +169,7 @@ export default ({ data }) => {
               <p className="review-author">- Farhan D., father of twins</p>
             </div>
             <div >
-              <img src={imgKateReview} alt="review by Kate, children's drawing of four family members reacting to the book with a postive note of thanks"/>
+              <img src={imgKateReview} style={{ boxShadow: '0px 3px 15px rgba(0,0,0,0.2)'}}alt="review by Kate, children's drawing of four family members reacting to the book with a postive note of thanks"/>
               <p className="review-author">- Kate, honest critic</p>
             </div>
           </div>

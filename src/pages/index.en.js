@@ -35,6 +35,9 @@ import page4 from '../../static/images/book-pages/en/page-4.jpg'
 import page5 from '../../static/images/book-pages/en/page-5.jpg'
 import page6 from '../../static/images/book-pages/en/page-6.jpg'
 
+// review
+import imgKateReview from '../../static/images/reviews/honest-review.jpg'
+
 // Array-ify
 const veggieRainbow = [
   imgBellpepper,
@@ -164,6 +167,10 @@ export default ({ data }) => {
             <div className="review">
               <span className="review-text">Finally, a children's book where <strong>I laughed as loud as my kids did</strong>.</span>
               <p className="review-author">- Farhan D., father of twins</p>
+            </div>
+            <div >
+              <img src={imgKateReview} alt="review by Kate, children's drawing of four family members reacting to the book with a postive note of thanks"/>
+              <p className="review-author">- Kate, honest critic</p>
             </div>
           </div>
 

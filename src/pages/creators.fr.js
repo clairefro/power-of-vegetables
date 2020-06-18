@@ -80,6 +80,7 @@ export default () => (
         <div className="creator">
           <div className="creator-section-img">
             <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
+            <p className="ta-center">photo par Brent Mullins</p>
           </div>
           <div className="creator-section-text">
             <h3><strong>Natalia Sanín</strong></h3>

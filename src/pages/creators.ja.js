@@ -79,6 +79,7 @@ export default () => (
         <div className="creator">
           <div className="creator-section-img">
             <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
+            <p className="ta-center">出典 ブレント・マランズ</p>
           </div>
           <div className="creator-section-text">
             <h3><strong>ナタリア・<span className="w">サニン</span></strong></h3>

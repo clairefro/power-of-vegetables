@@ -9,6 +9,7 @@ import { Link } from '../components/link'
 import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
+import imgFran from '../../public/images/creators/fran.jpg'
 import imgDaphne from '../../static/images/creators/daphne.jpg'
 import imgNatalia from '../../static/images/creators/natalia.jpg'
 
@@ -78,13 +79,24 @@ export default () => (
 
         <div className="creator">
           <div className="creator-section-img">
-            <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
+            <img src={imgFran} className="responsive" alt="フランシリ・ルアニー"/>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>フランシリ・<span className="w">ルアニー</span></strong></h3>
+            <p><strong>翻訳者（ポルトガル語）</strong></p>
+            <p>本人の言葉で、社会の中で自分の居場所を求めている黒人女性。母親になって自分自身を再発見し、翻訳を通して文字の世界に対して真の愛情を育む。</p>
+          </div>
+        </div>
+
+        <div className="creator reverse">
+          <div className="creator-section-img">
+            <img src={imgNatalia} className="responsive" alt="ナタリア・サニン"/>
             <p className="ta-center">出典 ブレント・マランズ</p>
           </div>
           <div className="creator-section-text">
             <h3><strong>ナタリア・<span className="w">サニン</span></strong></h3>
             <p><strong>翻訳者（スペイン語）</strong></p>
-            <p>動物が大好き（そのオナラを含めて）。自由時間の多くを詩や短編小説の読書と執筆に費やしている。</p>
+            <p>動物が大好き（そのオナラを含め）。自由時間の多くを詩や短編小説の読書と執筆に費やしている。</p>
           </div>
         </div>
       </Fade>

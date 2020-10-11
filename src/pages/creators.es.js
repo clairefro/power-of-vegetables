@@ -9,6 +9,7 @@ import { Link } from '../components/link'
 import imgClaire from '../../static/images/creators/claire.jpg'
 import imgVarvara from '../../static/images/creators/varvara.jpg'
 import imgSuga from '../../static/images/creators/suga.jpg'
+import imgFran from '../../public/images/creators/fran.jpg'
 import imgDaphne from '../../static/images/creators/daphne.jpg'
 import imgNatalia from '../../static/images/creators/natalia.jpg'
 
@@ -73,11 +74,22 @@ export default () => (
           <div className="creator-section-text">
             <h3><strong>Daphné B.</strong></h3>
             <p><strong>Traductora (francés)</strong></p>
-            <p>Daphne B. es una poeta y traductora literaria residente en Montreal. Podemos escucharla hablar de libros en el programa radial <a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit.</em></a></p>
+            <p>Poeta y traductora literaria residente en Montreal. Podemos escucharla hablar de libros en el programa radial <a href="https://ici.radio-canada.ca/premiere/emissions/plus-on-est-de-fous-plus-on-lit" className="link" target="_blank" rel="noopener noreferrer"><em>Plus on est de fous, plus on lit.</em></a></p>
           </div>
         </div>
 
         <div className="creator">
+          <div className="creator-section-img">
+            <img src={imgFran} className="responsive" alt="Francili Luany"/>
+          </div>
+          <div className="creator-section-text">
+            <h3><strong>Francili Luany</strong></h3>
+            <p><strong>Traductora (portugués)</strong></p>
+            <p>Francili se describe a sí misma como una mujer negra que busca su espacio en la sociedad, se reencuentra tras la maternidad y a través de la traducción encuentra un amor para el universo de las letras.</p>
+          </div>
+        </div>
+
+        <div className="creator reverse">
           <div className="creator-section-img">
             <img src={imgNatalia} className="responsive" alt="Natalia Sanín"/>
             <p className="ta-center">foto por Brent Mullins</p>

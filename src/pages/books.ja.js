@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react"
 
-import SEO from '../components/seo'
-import BookCard from '../components/bookCard'
-import { Link } from '../components/link'
-import CommingSoon from '../components/commingSoon'
+import SEO from "../components/seo"
+import BookCard from "../components/bookCard"
+import { Link } from "../components/link"
+import CommingSoon from "../components/commingSoon"
+import TootBox from "../components/tootBox"
 
 // images
-import imgEN from '../../static/images/thumbs/thumb_en.jpg'
-import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
-import imgFR from '../../static/images/thumbs/thumb_fr.jpg'
-import imgES from '../../static/images/thumbs/thumb_es.jpg'
+import imgEN from "../../static/images/thumbs/thumb_en.jpg"
+import imgJA from "../../static/images/thumbs/thumb_ja.jpg"
+import imgFR from "../../static/images/thumbs/thumb_fr.jpg"
+import imgES from "../../static/images/thumbs/thumb_es.jpg"
 
 export default ({ pageContext: { langKey } }) => (
   <div className="page-books">
@@ -19,61 +20,51 @@ export default ({ pageContext: { langKey } }) => (
     />
     <div className="container">
       <div className="title-box">
-        <h2 className="ta-center"><span className="w">絵本を</span><span className="w">買う</span></h2>
-        <p className="ta-center">Kindleおよびペーパーバック形式で販売中。子供に同じ楽しい話をいくつかの言語で読んでみましょう！</p>
-        <Link to="/#synopsis" className="link">この絵本について</Link>
+        <h2 className="ta-center">
+          <span className="w">絵本を</span>
+          <span className="w">買う</span>
+        </h2>
+        <p className="ta-center">
+          Kindleおよびペーパーバック形式で販売中。子供に同じ楽しい話をいくつかの言語で読んでみましょう！
+        </p>
+        <Link to="/#synopsis" className="link">
+          この絵本について
+        </Link>
       </div>
 
       <BookCard
         cover={imgJA}
         lang="日本語"
         kindleLink="https://mybook.to/PowerOfVegetablesKJP"
-        renderLang='ja'
+        renderLang="ja"
       />
       <BookCard
         cover={imgEN}
         lang="英語"
         kindleLink="https://mybook.to/PowerOfVegetablesKEN"
         paperbackLink="https://mybook.to/PowerOfVegetablesPEN"
-        renderLang='ja'
+        renderLang="ja"
       />
       <BookCard
         cover={imgFR}
         lang="フランス語"
         kindleLink="https://mybook.to/PowerOfVegetablesKFR"
         paperbackLink="https://mybook.to/PowerOfVegetablesPFR"
-        renderLang='ja'
+        renderLang="ja"
       />
       <BookCard
         cover={imgES}
         lang="スペイン語"
         kindleLink="https://mybook.to/PowerOfVegetablesKES"
         paperbackLink="https://mybook.to/PowerOfVegetablesPES"
-        renderLang='ja'
+        renderLang="ja"
       />
 
       <CommingSoon lang={langKey} />
 
+      <h5 className="ta-center">世界中のおなら</h5>
+      <p className="ta-center">どこへ行っても、「おなら」を言えるように。</p>
+      <TootBox />
     </div>
   </div>
 )
-
-//
-// export const query = graphql`
-//   query {
-//     allFile(filter: {relativePath: {regex: "/thumbs/"}}) {
-//       nodes {
-//         childImageSharp {
-//           fluid {
-//             base64
-//             tracedSVG
-//             srcWebp
-//             srcSetWebp
-//             originalImg
-//             originalName
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

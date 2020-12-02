@@ -7,8 +7,8 @@
     left: 0;
     height: 500px;
     width: 100vw;
-    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
-    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,10 +56,11 @@
         height: 80px;
       }
       .cta {
-        color: #FFF;
+        color: #fff;
         background-color: $green;
         font-weight: bold;
         padding: 8px 20px;
+        box-shadow: $shadow;
       }
     }
   }

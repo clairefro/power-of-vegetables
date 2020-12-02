@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react"
 
-import SEO from '../components/seo'
-import BookCard from '../components/bookCard'
-import { Link } from '../components/link'
-import CommingSoon from '../components/commingSoon'
+import SEO from "../components/seo"
+import BookCard from "../components/bookCard"
+import { Link } from "../components/link"
+import CommingSoon from "../components/commingSoon"
+import TootBox from "../components/tootBox"
 
 // images
-import imgEN from '../../static/images/thumbs/thumb_en.jpg'
-import imgJA from '../../static/images/thumbs/thumb_ja.jpg'
-import imgFR from '../../static/images/thumbs/thumb_fr.jpg'
-import imgES from '../../static/images/thumbs/thumb_es.jpg'
+import imgEN from "../../static/images/thumbs/thumb_en.jpg"
+import imgJA from "../../static/images/thumbs/thumb_ja.jpg"
+import imgFR from "../../static/images/thumbs/thumb_fr.jpg"
+import imgES from "../../static/images/thumbs/thumb_es.jpg"
 
 export default ({ pageContext: { langKey } }) => (
   <div className="page-books">
@@ -20,9 +21,15 @@ export default ({ pageContext: { langKey } }) => (
     <div className="container">
       <div className="title-box">
         <h2 className="ta-center">Acheter le livre</h2>
-        <p className="ta-center">Disponible en format Kindle et en livre de poche.</p>
-        <p>Lisez la même histoire amusante à votre enfant en plusieurs langues !</p>
-        <Link to="/#synopsis" className="link">À propos du livre</Link>
+        <p className="ta-center">
+          Disponible en format Kindle et en livre de poche.
+        </p>
+        <p>
+          Lisez la même histoire amusante à votre enfant en plusieurs langues !
+        </p>
+        <Link to="/#synopsis" className="link">
+          À propos du livre
+        </Link>
       </div>
 
       <BookCard
@@ -44,7 +51,7 @@ export default ({ pageContext: { langKey } }) => (
         lang="espagnol"
         kindleLink="https://mybook.to/PowerOfVegetablesKES"
         paperbackLink="https://mybook.to/PowerOfVegetablesPES"
-        renderLang='fr'
+        renderLang="fr"
       />
       <BookCard
         cover={imgJA}
@@ -53,8 +60,13 @@ export default ({ pageContext: { langKey } }) => (
         kindleLink="https://mybook.to/PowerOfVegetablesKJP"
       />
 
-      <CommingSoon lang={langKey}/>
+      <CommingSoon lang={langKey} />
 
+      <h5 className="ta-center">Les pets autour du monde</h5>
+      <p className="ta-center">
+        Apprenez à dire «un pet», peu importe où vous mangez des légumes.
+      </p>
+      <TootBox />
     </div>
   </div>
 )

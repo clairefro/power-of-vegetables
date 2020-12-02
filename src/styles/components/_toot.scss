@@ -1,0 +1,79 @@
+.toot {
+  background-color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  border: transparent solid 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  span {
+    display: block;
+  }
+  .toot-text-box {
+    max-width: max-content;
+    .toot-text {
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .toot-lang {
+      color: $green-dark;
+      font-size: 20px;
+    }
+  }
+  svg {
+    width: 25px;
+    margin: 1rem;
+  }
+  &:hover {
+    border-color: $green-dark;
+    transition: 0.2s;
+    transform: scale(1.2);
+    z-index: 99;
+  }
+}
+
+.toot-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //   for fun annoying animation:
+  //
+  //   .toot-x {
+  //     animation: x 13s linear infinite alternate;
+  //   }
+
+  //   .toot-y {
+  //     animation: y 7s linear infinite alternate;
+  //   }
+
+  //   @keyframes x {
+  //     100% {
+  //       transform: translateX(calc(100% - 200px));
+  //     }
+  //   }
+
+  //   @keyframes y {
+  //     100% {
+  //       transform: translateY(calc(100% - 200px));
+  //     }
+  //   }
+}

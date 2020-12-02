@@ -11,6 +11,7 @@ import imgEN from "../../static/images/thumbs/thumb_en.jpg"
 import imgJA from "../../static/images/thumbs/thumb_ja.jpg"
 import imgFR from "../../static/images/thumbs/thumb_fr.jpg"
 import imgES from "../../static/images/thumbs/thumb_es.jpg"
+import imgPT from "../../static/images/thumbs/thumb_pt.jpg"
 
 export default ({ pageContext: { langKey } }) => (
   <div className="page-books">
@@ -57,6 +58,12 @@ export default ({ pageContext: { langKey } }) => (
         lang="スペイン語"
         kindleLink="https://mybook.to/PowerOfVegetablesKES"
         paperbackLink="https://mybook.to/PowerOfVegetablesPES"
+        renderLang="ja"
+      />
+      <BookCard
+        cover={imgPT}
+        lang="ポルトガル語"
+        kindleLink="https://www.amazon.com/poder-das-verduras-Portuguese-ebook/dp/B08NZZYLR3/ref=sr_1_1?dchild=1&keywords=o+poder+das+verduras&qid=1606889182&s=digital-text&sr=1-1"
         renderLang="ja"
       />
 

@@ -4,13 +4,14 @@ import SEO from "../components/seo"
 import BookCard from "../components/bookCard"
 import { Link } from "../components/link"
 import CommingSoon from "../components/commingSoon"
+import TootBox from "../components/tootBox"
 
 // images
 import imgEN from "../../static/images/thumbs/thumb_en.jpg"
 import imgJA from "../../static/images/thumbs/thumb_ja.jpg"
 import imgFR from "../../static/images/thumbs/thumb_fr.jpg"
 import imgES from "../../static/images/thumbs/thumb_es.jpg"
-import TootBox from "../components/tootBox"
+import imgPT from "../../static/images/thumbs/thumb_pt.jpg"
 
 export default ({ pageContext: { langKey } }) => (
   <div className="page-books">
@@ -51,6 +52,11 @@ export default ({ pageContext: { langKey } }) => (
         cover={imgJA}
         lang="Japanese"
         kindleLink="https://mybook.to/PowerOfVegetablesKJP"
+      />
+      <BookCard
+        cover={imgPT}
+        lang="Portuguese"
+        kindleLink="https://www.amazon.com/poder-das-verduras-Portuguese-ebook/dp/B08NZZYLR3/ref=sr_1_1?dchild=1&keywords=o+poder+das+verduras&qid=1606889182&s=digital-text&sr=1-1"
       />
 
       <CommingSoon lang={langKey} />

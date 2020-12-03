@@ -63,7 +63,7 @@ export default ({ pageContext: { langKey } }) => (
       <BookCard
         cover={imgPT}
         lang="ポルトガル語"
-        kindleLink="https://www.amazon.com/poder-das-verduras-Portuguese-ebook/dp/B08NZZYLR3/ref=sr_1_1?dchild=1&keywords=o+poder+das+verduras&qid=1606889182&s=digital-text&sr=1-1"
+        kindleLink="https://mybook.to/PowerOfVegetablesPPT"
         renderLang="ja"
       />
 

@@ -55,16 +55,17 @@ export default ({ pageContext: { langKey } }) => (
         renderLang="fr"
       />
       <BookCard
+        cover={imgPT}
+        lang="portugais"
+        kindleLink="https://mybook.to/PowerOfVegetablesPPT"
+        paperbackLink="https://mybook.to/PowerOfVegetablesPBPT"
+        renderLang="fr"
+      />
+      <BookCard
         cover={imgJA}
         lang="japonais"
         renderLang="fr"
         kindleLink="https://mybook.to/PowerOfVegetablesKJP"
-      />
-      <BookCard
-        cover={imgPT}
-        lang="portugais"
-        kindleLink="https://mybook.to/PowerOfVegetablesPPT"
-        renderLang="fr"
       />
 
       <CommingSoon lang={langKey} />
